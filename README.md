@@ -51,3 +51,11 @@ Editing .vdf steam controller files
 How to make the most of the Steam Controller: a comprehensive guide  
   https://www.pcgamer.com/steam-controller-setup-guide/
 
+Create a graphical reference card for Elite: Dangerous bindings  
+  http://edrefcard.slions.net/  
+  source: https://github.com/richardbuckle/EDRefCard  
+
+Elite Dangerous Controls Reference  
+  https://troynt.github.io/elite_dangerous_controls_reference/#  
+  source: https://github.com/troynt/elite_dangerous_controls_reference  
+
