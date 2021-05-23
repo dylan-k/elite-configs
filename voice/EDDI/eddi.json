@@ -1,0 +1,27 @@
+﻿{
+  "homeSystem": "",
+  "homeStation": null,
+  "destinationSystem": null,
+  "destinationStation": null,
+  "squadronName": null,
+  "squadronID": null,
+  "squadronRank": "None",
+  "squadronAllegiance": "$faction_None",
+  "squadronPower": "None",
+  "squadronSystem": "",
+  "squadronFaction": "The Order of Mobius",
+  "debug": false,
+  "beta": false,
+  "DisableTelemetry": false,
+  "plugins": {
+    "Galnet monitor": false,
+    "Inara Responder": true,
+    "EDDN responder": false
+  },
+  "Gender": "Male",
+  "powerMerits": null,
+  "exporttarget": "Coriolis",
+  "OverrideCulture": null,
+  "CommanderName": null,
+  "PhoneticName": null
+}
