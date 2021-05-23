@@ -1,12 +1,21 @@
 
 
-I have EDDI installed as a VoiceAttack plugin, and Voiceattack is installed via Steam. THere are other install configs possible so these are the important paths:
+Config for Elite Dangerous Data Interface
+===============================================================================
+
+EDDI is a great companion to Elite Dangerous because it uses computer speech to tell you so much more about the game's environment and events while you play. It can do so much, but by default it does too much, so my config tones it down just a bit. Some of the verbose things are shorter and some of the redundant things are disabled.
 
 
-path to exe:  
-"C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\Apps\elite-dangerous-data-interface\EDDI.exe"
+Setup
+-------------------------------------------------------------------------------
 
-config files:  
-%APPDATA%\Roaming\EDDI  
+1. install the latest EDDI from https://github.com/cmdrmcdonald/EliteDangerousDataProvider. (I have EDDI installed as a VoiceAttack plugin, and Voiceattack is installed via Steam.)
+2. copy `custom.json` to `%AppData%\EDDI\personalities`
+3. copy `eddi.json` to  `%APPDATA%\Roaming\EDDI`
+4. run EDDI and select the new settings via `Speech Responder > Active Personality settings`
 
-eddi.json and /personalities should be installed in the config files directory.
+
+See also
+-------------------------------------------------------------------------------
+
+https://www.reddit.com/r/EliteDangerous/comments/6s5lfa/i_wrote_a_eddi_script_for_explorers/
