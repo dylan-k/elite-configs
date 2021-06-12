@@ -1,17 +1,17 @@
 ﻿{
-  "homeSystem": "",
-  "homeStation": null,
+  "homeSystem": "Varati",
+  "homeStation": "Thompson Dock",
   "destinationSystem": null,
   "destinationStation": null,
-  "squadronName": null,
-  "squadronID": null,
-  "squadronRank": "None",
-  "squadronAllegiance": "$faction_None",
+  "squadronName": "Canonn",
+  "squadronID": "Cano",
+  "squadronRank": "Rookie",
+  "squadronAllegiance": "$faction_Independent;",
   "squadronPower": "None",
-  "squadronSystem": "",
-  "squadronFaction": "The Order of Mobius",
+  "squadronSystem": "Varati",
+  "squadronFaction": "Canonn",
   "debug": false,
-  "beta": false,
+  "beta": true,
   "DisableTelemetry": false,
   "plugins": {
     "Galnet monitor": false,
@@ -23,5 +23,9 @@
   "exporttarget": "Coriolis",
   "OverrideCulture": null,
   "CommanderName": null,
-  "PhoneticName": null
+  "PhoneticName": null,
+  "Maximized": false,
+  "Minimized": false,
+  "SelectedTab": 13,
+  "MainWindowPosition": "816,420,928,600"
 }

@@ -10,8 +10,8 @@ Setup
 -------------------------------------------------------------------------------
 
 1. install the latest EDDI from https://github.com/cmdrmcdonald/EliteDangerousDataProvider. (I have EDDI installed as a VoiceAttack plugin, and Voiceattack is installed via Steam.)
-2. copy `custom.json` to `%AppData%\EDDI\personalities`
-3. copy `eddi.json` to  `%APPDATA%\Roaming\EDDI`
+2. symlink `custom.json` to `%AppData%\EDDI\personalities`
+3. symlink `eddi.json` to  `%APPDATA%\EDDI`
 4. run EDDI and select the new settings via `Speech Responder > Active Personality settings`
 
 
