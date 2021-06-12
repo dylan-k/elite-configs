@@ -1,11 +1,11 @@
 "controller_mappings"
 {
 	"version"		"3"
-	"revision"		"276"
-	"title"		"Commander Knight-Owl's Odyssey Controls"
-	"description"		"WORK IN PROGRESS, built for Odyssey's v4.0 bindings. My goal's to make the first person stuff a lot like Halo because that's what I'm used to. For more info search the web for 'elite configs github'"
-	"creator"		"76561198259845014"
-	"controller_type"		"controller_steamcontroller_gordon"
+	"revision"		"2"
+	"title"		"Official Elite Dangerous Bindings Xbox pad"
+	"description"		"#SettingsController_AutosaveDescription"
+	"creator"		"76561198273221119"
+	"controller_type"		"controller_xboxone"
 	"major_revision"		"0"
 	"minor_revision"		"0"
 	"Timestamp"		"0"
@@ -15,7 +15,7 @@
 		"mode"		"four_buttons"
 		"inputs"
 		{
-			"button_a"
+			"button_A"
 			{
 				"activators"
 				{
@@ -28,7 +28,7 @@
 					}
 				}
 			}
-			"button_b"
+			"button_B"
 			{
 				"activators"
 				{
@@ -41,7 +41,7 @@
 					}
 				}
 			}
-			"button_x"
+			"button_X"
 			{
 				"activators"
 				{
@@ -54,7 +54,7 @@
 					}
 				}
 			}
-			"button_y"
+			"button_Y"
 			{
 				"activators"
 				{
@@ -146,10 +146,9 @@
 		}
 		"settings"
 		{
+			"requires_click"		"0"
 			"deadzone"		"5000"
-		}
-		"gameactions"
-		{
+			"haptic_intensity_override"		"0"
 		}
 	}
 	"group"
@@ -229,7 +228,6 @@
 		"settings"
 		{
 			"output_trigger"		"1"
-			"deadzone_inner_radius"		"180"
 		}
 	}
 	"group"
@@ -300,96 +298,23 @@
 					{
 						"bindings"
 						{
-							"binding"		"xinput_button JOYSTICK_LEFT"
+							"binding"		"xinput_button JOYSTICK_RIGHT"
 						}
 						"settings"
 						{
-							"haptic_intensity"		"2"
+							"haptic_intensity"		"1"
 						}
 					}
 				}
 			}
-			"edge"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"key_press LEFT_SHIFT"
-						}
-						"settings"
-						{
-							"haptic_intensity"		"2"
-							"delay_start"		"25"
-						}
-					}
-				}
-			}
-		}
-		"gameactions"
-		{
 		}
 	}
 	"group"
 	{
 		"id"		"9"
-		"mode"		"dpad"
+		"mode"		"joystick_move"
 		"inputs"
 		{
-			"dpad_north"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"xinput_button DPAD_UP"
-						}
-					}
-				}
-			}
-			"dpad_south"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"xinput_button DPAD_DOWN"
-						}
-					}
-				}
-			}
-			"dpad_east"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"xinput_button DPAD_RIGHT"
-						}
-					}
-				}
-			}
-			"dpad_west"
-			{
-				"activators"
-				{
-					"Full_Press"
-					{
-						"bindings"
-						{
-							"binding"		"xinput_button DPAD_LEFT"
-						}
-					}
-				}
-			}
 			"click"
 			{
 				"activators"
@@ -398,15 +323,15 @@
 					{
 						"bindings"
 						{
-							"binding"		"xinput_button JOYSTICK_LEFT"
+							"binding"		"xinput_button JOYSTICK_RIGHT"
+						}
+						"settings"
+						{
+							"haptic_intensity"		"2"
 						}
 					}
 				}
 			}
-		}
-		"settings"
-		{
-			"requires_click"		"0"
 		}
 	}
 	"group"
@@ -503,14 +428,12 @@
 		{
 			"7"		"switch active"
 			"0"		"button_diamond active"
-			"1"		"left_trackpad inactive"
-			"8"		"left_trackpad active"
-			"2"		"right_trackpad active"
-			"6"		"right_trackpad inactive"
-			"3"		"joystick inactive"
-			"9"		"joystick active"
+			"3"		"joystick active"
 			"4"		"left_trigger active"
 			"5"		"right_trigger active"
+			"1"		"dpad active"
+			"8"		"right_joystick active"
+			"9"		"right_joystick inactive"
 		}
 	}
 	"settings"

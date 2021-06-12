@@ -1,0 +1,670 @@
+{
+    "Version": "3.7.7818.18335",
+    "Logging": {
+        "IsEnabled": true,
+        "IsVerbose": false
+    },
+    "EliteFolder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Elite Dangerous\\Products\\elite-dangerous-odyssey-64",
+    "ScriptsFolder": "%appdata%\\EliteG19s\\Scripts",
+    "Music": {
+        "DefaultFolder": "M:\\Music",
+        "PauseOnJump": false,
+        "PauseOnSpeech": false,
+        "PauseWhileDocked": false,
+        "PauseInNormalSpace": false,
+        "PauseInDanger": false,
+        "PauseInSRV": false,
+        "PauseInFighter": false
+    },
+    "Spotify": {
+        "Enabled": false,
+        "LoginOnStartup": false,
+        "LoadOwnPlaylists": true,
+        "UseInternalPlayer": false
+    },
+    "InitialVolume": 1.0,
+    "DisplayOptions": {
+        "UseWindow": "auto",
+        "InitialScreen": "Status",
+        "SaveWindowsOnExit": true,
+        "DisplayMessages": "all",
+        "DisplayEveryFrame": 1,
+        "UseUniqueWindowTitle": false,
+        "Windows": [{
+            "X": -1930,
+            "Y": 240,
+            "ShowTitleBar": true,
+            "IsAlwaysOnTop": true,
+            "IsWidescreen": true,
+            "ShowOnDisplay": {
+                "Name": "LA2405 (#3)",
+                "Id": "\\\\.\\DISPLAY3"
+            },
+            "FullScreen": true,
+            "ResolutionMultiplier": 3.0,
+            "DisplayEveryFrame": 1,
+            "ActiveScreen": "Status",
+            "Screens": {
+                "Orrery": [
+                    "{\"DefaultZoom\":1,\"ZoomLevel\":10,\"Speed\":1}"
+                ],
+                "AudioVisualization": [
+                    "{\"ActivePlugin\":0}"
+                ]
+            }
+        }]
+    },
+    "AudioVisualizationOptions": {
+        "StartWith": "Cassette",
+        "FullScreenCoverArt": {
+            "ShowBars": true
+        },
+        "Orrery": {
+            "DefaultSystemName": "None",
+            "ShowBackground": true,
+            "OrbitLineColor": "Yellow",
+            "OrbitLineLength": "Medium",
+            "RingDensity": "Dense",
+            "ShowBars": true,
+            "RingsRippleEffect": true,
+            "PlanetSizeEffect": true
+        },
+        "Starfield": {
+            "StarCount": 500
+        }
+    },
+    "OrreryOptions": {
+        "OrbitLineColor": "Yellow",
+        "OrbitLineLength": "Medium",
+        "RingDensity": "Dense",
+        "ShowBackground": true,
+        "UseKeyboardNavigation": true
+    },
+    "GPSOptions": {
+        "ShowGPSInSRV": true,
+        "UseVoiceGuidance": true,
+        "GuidanceInterval": 15.0
+    },
+    "FavoriteStarSystems": [
+        "Sol",
+        "Achenar",
+        "Lave",
+        "Shinrarta Dezhra",
+        "Epsilon Indi",
+        "Sagittarius A*",
+        "Eravate",
+        "60 Herculis",
+        "Maia",
+        "Colonia"
+    ],
+    "RadioStations": [{
+            "Name": "Radio Skvortsov",
+            "Url": "https://fred.torontocast.com:1260/hphibirh/1/winamp.m3u"
+        },
+        {
+            "Name": "Radio Sidewinder",
+            "Url": "http://www.radiosidewinder.com/radiosidewinder.m3u"
+        },
+        {
+            "Name": "Hutton Orbital Radio",
+            "Url": "https://hazel.torontocast.com:1495/cggratpk/3/winamp.m3u"
+        },
+        {
+            "Name": "Lave Radio",
+            "Url": "https://kathy.torontocast.com:1350/grantwoolcott/1/winamp.m3u"
+        },
+        {
+            "Name": "Third Rock",
+            "Url": "http://rfcmedia2.streamguys1.com/thirdrock.mp3"
+        },
+        {
+            "Name": "Sci-Fi Radio",
+            "Url": "http://s1.voscast.com:8652/;stream1617693979472/1"
+        },
+        {
+            "Name": "Echoes of Blue Mars: Blue Mars",
+            "Url": "http://streams.echoesofbluemars.org:8000/bluemars"
+        },
+        {
+            "Name": "Echoes of Blue Mars: Cryosleep",
+            "Url": "http://streams.echoesofbluemars.org:8000/cryosleep"
+        },
+        {
+            "Name": "Soma: Mission Control",
+            "Url": "http://ice.somafm.com/missioncontrol"
+        },
+        {
+            "Name": "Soma: Space Station",
+            "Url": "http://ice.somafm.com/spacestation"
+        },
+        {
+            "Name": "Soma: Deep Space One",
+            "Url": "http://ice.somafm.com/deepspaceone"
+        },
+        {
+            "Name": "Soma: Drone Zone",
+            "Url": "http://ice.somafm.com/dronezone"
+        },
+        {
+            "Name": "Soma: Lush",
+            "Url": "http://ice.somafm.com/lush"
+        },
+        {
+            "Name": "Soma: Black Rock",
+            "Url": "http://ice.somafm.com/brfm"
+        },
+        {
+            "Name": "Soma: Doomed",
+            "Url": "http://ice.somafm.com/doomed"
+        },
+        {
+            "Name": "Rosswell UFO Radio",
+            "Url": "http://listen.shoutcast.com/roswelluforadio.m3u"
+        }
+    ],
+    "TVStations": [{
+            "Name": "Galnet News Digest",
+            "Username": "pwotherspoon",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Isinona",
+            "Username": "Isinona",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Elite Dangerous",
+            "Username": "FrontierDevelopments",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Obsidian Ant",
+            "Username": "ObsidianAnt",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Elite Racers",
+            "PlaylistId": "PLq3HkeraP8n3h9sTIXUVXhn4iDhF92Ma6",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Top Shift",
+            "Username": "PhoenixDfire",
+            "Randomized": false,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Guardians of the Galaxy Soundtrack",
+            "PlaylistId": "PLpRjkOHBe_TgmznCle__jWDhoV4aFgCjw",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Pop Party",
+            "PlaylistId": "PL9tY0BWXOZFvz9SFKucMbmBt-SnZtokVY",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Top Classical Music",
+            "PlaylistId": "PLVXq77mXV53-Np39jM456si2PeTrEm9Mj",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "Country Party",
+            "PlaylistId": "PL9tY0BWXOZFv8hIun4ujGj0RF66Ogb-vf",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "EDM Party",
+            "PlaylistId": "PL9tY0BWXOZFvxJlU0eH71A4nkP1O1HsUo",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "EDM Replay",
+            "PlaylistId": "PL9tY0BWXOZFspK-zf2PoWqP6NJYflkM-B",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        },
+        {
+            "Name": "The Daily 40",
+            "PlaylistId": "PLFgquLnL59akEDVznnoh3KT0EM5DVczAq",
+            "Randomized": true,
+            "StartWithLatest": false,
+            "Position": 0.0,
+            "State": 0
+        }
+    ],
+    "SpotifyPlaylists": [{
+            "Name": "Elite: Dangerous OST",
+            "SpotifyLink": "spotify:album:7DiKsmM1Ekr9mWYxRCMjrE",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Spacetruckers Music",
+            "SpotifyLink": "spotify:user:1127748710:playlist:5kDPYBrGSabnu0XapRy0ge",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Guardians of the Galaxy",
+            "SpotifyLink": "spotify:user:hollywdrecrds:playlist:1xY6msLHX1W34EzB0UkkbU",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Space Cowboy",
+            "SpotifyLink": "spotify:user:sgezen:playlist:14EKKFT6YjOvrC0PpPdJpK",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Space Truckin'",
+            "SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Frontier Elite II",
+            "SpotifyLink": "spotify:user:tiayviel:playlist:2PYJtlqU93kZn67DItD2Pt",
+            "IsDisabled": false
+        },
+        {
+            "Name": "CMDR Discordian's list",
+            "SpotifyLink": "spotify:user:spotify:playlist:3QqnY7KqLydtKHLACW4prC",
+            "IsDisabled": false
+        },
+        {
+            "Name": "CMDR Paul Loachman's Elite Mixtape",
+            "SpotifyLink": "spotify:user:1113282120:playlist:7B7wi4wMyBii7HoCj8OOaf",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Space.FM",
+            "SpotifyLink": "spotify:user:1195501566:playlist:2lwRI5Xlup71GjX0fB6igf",
+            "IsDisabled": false
+        },
+        {
+            "Name": "CMDR MooCube's list",
+            "SpotifyLink": "spotify:user:1262772122:playlist:6DhaOBYq7ZlmlZ7WNwEYbJ",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Rocking through the Universe",
+            "SpotifyLink": "spotify:user:sszczesny:playlist:6IKlk9FfCRBQmM3DuSmK8D",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Galactonaut",
+            "SpotifyLink": "spotify:user:rieggs:playlist:5qX8boBukvwIX27tpyjR8t",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Heat Levels Critical",
+            "SpotifyLink": "spotify:user:highonmemeswhotooktheusername:playlist:4mwFgf4YXL9i4k0EvsoMuR",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Space Trucker Music",
+            "SpotifyLink": "spotify:user:1231018979:playlist:4VvHCAEcXC54Sb34x5huuK",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Homeworld",
+            "SpotifyLink": "spotify:user:1134145980:playlist:5JgJJJ1CUaEGnUH9st3t2A",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Interstellar: OST",
+            "SpotifyLink": "http://open.spotify.com/album/7a78GiEowpaCa7ZJs44xUU",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Mass Effect Andromeda: Pathfinder",
+            "SpotifyLink": "spotify:user:1156481697:playlist:2ESpOZ6IT7hB7XlVhnHIuV",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Mass Effect Andromeda: Space Exploration",
+            "SpotifyLink": "spotify:user:1156481697:playlist:57pJivChtPThtinkzq9O2N",
+            "IsDisabled": false
+        },
+        {
+            "Name": "CMDR Ebmocces' list",
+            "SpotifyLink": "spotify:user:ebmocces:playlist:4wVzEEArGpLWuH3KCpe71I",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Space Dreams",
+            "SpotifyLink": "spotify:user:deerwolf1:playlist:59tM9mHndQkT12GiC5IDuy",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Hot New Dance Tracks",
+            "SpotifyLink": "spotify:user:spotify:playlist:37i9dQZF1DWWrJKwf0q9nn",
+            "IsDisabled": false
+        },
+        {
+            "Name": "Morning Commute",
+            "SpotifyLink": "spotify:user:spotify:playlist:2lDJ2xtmpCSN9CO7ZBkIVc",
+            "IsDisabled": false
+        },
+        {
+            "Name": "FH2: Radio Levante",
+            "SpotifyLink": "spotify:user:1125090355:playlist:3Sc6PSx7ZdbsoefvQCDGrZ",
+            "IsDisabled": false
+        }
+    ],
+    "Podcasts": [{
+            "Name": "Lave Radio",
+            "Url": "http://laveradio.com/feed/laveradio.xml"
+        },
+        {
+            "Name": "Guard Frequency",
+            "Url": "http://feeds.feedburner.com/GuardFrequencyPodcasts?format=xml"
+        },
+        {
+            "Name": "Hutton Orbital News",
+            "Url": "http://feeds.feedburner.com/HuttonOrbital?format=xml"
+        },
+        {
+            "Name": "Galnet News",
+            "Url": "http://feeds.feedburner.com/GalnetNews?format=xml"
+        },
+        {
+            "Name": "SpaceTime",
+            "Url": "https://rss.acast.com/spacetime"
+        }
+    ],
+    "Websites": [],
+    "RacingMusic": [{
+            "Name": "F1 Spirit",
+            "Url": "https://www.msx.org/sites/default/files/downloads/music/mp3/Bart-F1Spirit-StockCar.mp3"
+        },
+        {
+            "Name": "Checkpoint",
+            "Url": "https://api.soundcloud.com/tracks/265532059"
+        },
+        {
+            "Name": "Horse Race",
+            "Url": "https://api.soundcloud.com/tracks/215140917"
+        },
+        {
+            "Name": "Rainbow Road",
+            "Url": "https://api.soundcloud.com/tracks/149890125"
+        },
+        {
+            "Name": "Mario Circuit",
+            "Url": "https://api.soundcloud.com/tracks/227725758"
+        },
+        {
+            "Name": "Koopa Vacation",
+            "Url": "https://api.soundcloud.com/tracks/122874213"
+        },
+        {
+            "Name": "Fastway",
+            "Url": "https://api.soundcloud.com/tracks/75156042"
+        },
+        {
+            "Name": "Back on the Rocks",
+            "Url": "https://api.soundcloud.com/tracks/138014504"
+        },
+        {
+            "Name": "A Perfect Hero",
+            "Url": "https://api.soundcloud.com/tracks/83372823"
+        },
+        {
+            "Name": "Don't Stop the Music",
+            "Url": "https://api.soundcloud.com/tracks/138014505"
+        }
+    ],
+    "TwitchChannels": [{
+        "Name": "Monstercat",
+        "ChannelId": "monstercat"
+    }],
+    "OnTopReplica": {
+        "AttachFirstWindow": false,
+        "ExePath": "C:\\Users\\Dylan\\AppData\\Local\\OnTopReplica\\OnTopReplica.exe",
+        "Parameters": "--windowId=$HWND$ --visible --screenPosition=TR --opacity=150 --chromeOff --clickForwarding --size=$WIDTH$,$HEIGHT$"
+    },
+    "SpaceTrafficControlOptions": {
+        "EnableOnStart": true,
+        "Volume": 0.25,
+        "Density": 0.4,
+        "UseSoundEffects": false,
+        "OnlyInSuperCruise": false,
+        "ListenNearStations": false,
+        "DimMusicWhileTransmitting": false,
+        "ShowTrafficSubtitles": false,
+        "StartDelay": 0.0,
+        "TrafficControlLocalized": true,
+        "NPCVoicesEnabled": true,
+        "NPCVolume": 1.0,
+        "CMDRVoicesEnabled": true,
+        "CMDRVoiceLanguage": "Game",
+        "CMDRChannels": {
+            "NPC": true,
+            "Local": true,
+            "System": true,
+            "Player": true,
+            "Wing": true,
+            "Squadron": true,
+            "Friend": true,
+            "VoiceChat": true
+        },
+        "VoiceOptions": {
+            "Microsoft David Desktop": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            },
+            "Microsoft Mark": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            },
+            "Microsoft Zira": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            },
+            "Microsoft Hazel Desktop": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            },
+            "Microsoft David": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            },
+            "Microsoft Zira Desktop": {
+                "IsEnabled": true,
+                "Volume": 100,
+                "MinPitch": -3,
+                "MaxPitch": 2,
+                "MinRate": 1,
+                "MaxRate": 3
+            }
+        }
+    },
+    "LogitechSettings": {
+        "SetBackgroundColor": true,
+        "PlayEffects": true,
+        "Ambilight": false,
+        "ShowKeyBindings": false,
+        "KeyBindingColors": {
+            "FlightControls": "#007fe1",
+            "BuggyControls": "#007fe1",
+            "Fighting": "#c40606",
+            "Utilities": "#029e4c",
+            "Targeting": "#ff7f00",
+            "Orders": "#ffb000",
+            "FSS": "#71bffb",
+            "SAA": "#71bffb"
+        },
+        "UseDirectUSBConnection": false
+    },
+    "IsScriptingEnabled": false,
+    "IsConvertScreenshots": false,
+    "IsUseGameTime": true,
+    "QuitWhenEliteExits": false,
+    "IsUseDiscordRichPresence": true,
+    "DefaultTTSVoice": "Default",
+    "ArxAnimationLevel": "full",
+    "HotKeys": [{
+            "Function": "Up",
+            "UseAlt": false,
+            "UseCtrl": true,
+            "UseShift": true,
+            "UseWin": false,
+            "Key": "Up",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Down",
+            "UseAlt": false,
+            "UseCtrl": true,
+            "UseShift": true,
+            "UseWin": false,
+            "Key": "Down",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Left",
+            "UseAlt": false,
+            "UseCtrl": true,
+            "UseShift": true,
+            "UseWin": false,
+            "Key": "Left",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Right",
+            "UseAlt": false,
+            "UseCtrl": true,
+            "UseShift": true,
+            "UseWin": false,
+            "Key": "Right",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Menu",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        },
+        {
+            "Function": "OK",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Cancel",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Screen Status",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Screen AudioVisualization",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        },
+        {
+            "Function": "Screen News",
+            "UseAlt": false,
+            "UseCtrl": false,
+            "UseShift": false,
+            "UseWin": false,
+            "Key": "",
+            "IsEnabled": false
+        }
+    ],
+    "NewsTicker": {
+        "Note": "This section sets the Newsticker options. Maximum of three tickers, or two if you also show the Galnet Ticker.",
+        "IsShowGalnetTicker": true,
+        "IsUseTextToSpeech": false,
+        "ScreenTickers": [{
+            "Name": "Reddit",
+            "Url": "http://www.reddit.com/r/EliteDangerous/new/.rss"
+        }],
+        "ArxTicker": "http://elitedangerous-website-backend-production.elitedangerous.com/galnet.rss"
+    },
+    "PhilipsHue": {
+        "IsEnabled": false,
+        "Intensity": 0.25,
+        "Ambilight": false,
+        "PlayEffects": true
+    },
+    "AmbilightUpdateInterval": 250,
+    "LastCommander": {
+        "Name": "knight-owl",
+        "Platform": "pc"
+    }
+}
