@@ -4,6 +4,7 @@
 ; Platform ......: Windows 10
 ; Language ......: English (en-US)
 ; Author ........: Dylan Kinnett <dylan@nocategories.net>
+; Credits        : From a starter AHK template written by GroggyOtter
 ; =============================================================================
 
 ; tray icon
@@ -15,7 +16,6 @@ Menu, Tray, Icon, %I_Icon%
 ;return
 
 
-;Blank Template written by GroggyOtter
 #UseHook
 ;========================= Start Auto-Execution Section ========================
 ; Always run as admin
@@ -64,75 +64,114 @@ GroupAdd, saveReload, %A_ScriptName%
 Send {LWinDown}{d}{LWinUp}}
 
 ; Launchers -------------------------------------------------------------------
-; Run programS. Note that most programs will require a FULL file path:
+; Run programS. Note that most programs will require a FULL file path.
+; Apps with the longest startup are listed first.
 
 ; Elite Observatory
-; important to run from its own directory.
 Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 
-; the big ones, take a moment to load...
-Run, C:\Program Files\EDDiscovery\EDDiscovery.exe
-Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe
-Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe
-; some others...
-Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe
-Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe
-Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe
-Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe
-Run, M:\Games\Elite Dangerous\Elite Dangerous Scout\EDScout.exe
+; Elite Discovery
+Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
 
-; Unused Launchers ------------------------------------------------------------
+; VoiceAttack
+Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
+
+; EDMarketConnector
+Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
+
+; FirstContact
+Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
+
+; EliteG19s
+Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
+
+; Elite Dangerous Scout
+Run, M:\Games\Elite Dangerous\Elite Dangerous Scout\EDScout.exe, M:\Games\Elite Dangerous\Elite Dangerous Scout\
+
+; Elite Toolbox
 ; Run, M:\Games\Elite Dangerous\elite-toolbox-edtb\toolbox.exe
-; EDDI can also run inside of voice attack, so it's disabled here
+; EDDI: normally runs inside of voiceattack, so it's disabled here
 ; "C:\Program Files (x86)\VoiceAttack\Apps\EDDI\EDDI.exe"
 
-; hide all the things
+; Minimize Everything ---------------------------------------------------------
 Send {LWinDown}{d}{LWinUp}}
 
-; Ironically Launch the Launcher now (steam requires this)
-; Run, C:\Program Files (x86)\Steam\steamapps\common\Elite Dangerous\EDLaunch.exe
+; Start the game from Steam ---------------------------------------------------
+; note: in steam my shortcut is set to use a tool to skip the launcher
+; Steam launches the default way if min-ed-launcher is not installed
+; see also https://github.com/Rfvgyhn/min-ed-launcher
 run, steam://rungameid/359320
-
-
-; once the game is running, no more need for its launcher
-Loop
-{
-    WinWait, ahk_exe EliteDangerous64.exe
-    ;WinWaitClose, ahk_exe EliteDangerous64.exe
-    WinClose, ahk_exe EDlaunch.exe
-}
-
-
 
 ;; only after the game is actually running 
 ;; then open and then start Cougar Display
 ;; I think you even have to be logged into Open or wherever
 ;; better check the manual
-;; Run, M:\Games\Elite Dangerous\Cougar Display\MFDCougar.exe
+; Run, M:\Games\Elite Dangerous\Cougar Display\MFDCougar.exe
+
+; ok now open some web apps
+run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe --new-window https://eddb.io/trade/single https://eddb.io/trade/loops
 
 
+; Cleanup ----------------------------------------------------------------------
 
+; Close launcher after launch
+; note: min-ed-launcher also checks to close launcher when game exits
+Loop
+{
+  WinWait, ahk_exe EliteDangerous64.exe
+  ;WinWaitClose, ahk_exe EliteDangerous64.exe
+}
 
+; Close apps after game exit
+Loop
+{
+  WinWait, ahk_exe EliteDangerous64.exe
+  WinWaitClose, ahk_exe EliteDangerous64.exe
+    Process, Close, EDDI.exe
+    Process, Close, EDDiscovery.exe
+    Process, Close, EDMarketConnector.exe
+    Process, Close, EDScout.exe
+    Process, Close, EliteG19s.Windows.exe
+    Process, Close, FirstContact.exe
+    Process, Close, MFDCougar.exe
+    Process, Close, Observatory.exe 
+    Process, Close, toolbox.exe
+    Process, Close, VoiceAttack.exe
+}
+
+; Always on Top ----------------------------------------------------------------
+; stick” any window to  foreground of desktop with a simple keyboard shortcut.
+; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
+; to use it, while this script is running, click a window, then do control+space
+; control+space again will un-stick the window.
+ ^SPACE::  Winset, Alwaysontop, , A
 
 
 
 return
+; END OF MAIN SCRIPT 
+; ==============================================================================
 
-;======================== Save Reload / Quick Stop ========================
+
+
+
+; Save Reload / Quick Stop
+; =============================================================================
+
 #IfWinActive, ahk_group saveReload
 
 ; Use Control+S to save your script and reload it at the same time.
 ~^s::
-	TrayTip, Reloading updated script, %A_ScriptName%
-	SetTimer, RemoveTrayTip, 1500
-	Sleep, 1750
-	Reload
+  TrayTip, Reloading updated script, %A_ScriptName%
+  SetTimer, RemoveTrayTip, 1500
+  Sleep, 1750
+  Reload
 return
 
 ; Removes any popped up tray tips.
 RemoveTrayTip:
-	SetTimer, RemoveTrayTip, Off 
-	TrayTip 
+  SetTimer, RemoveTrayTip, Off 
+  TrayTip 
 return 
 
 ; Hard exit that just closes the script
@@ -143,18 +182,15 @@ ExitApp
 #IfWinActive
 
 
-;======================== Experimental ========================
+; ==============================================================================
+; =============================== Experimental =================================
+; ==============================================================================
 
 
-
-
-
-
-
-; Global hotstrings
+; Global hotstrings ------------------------------------------------------------
 ; etc...
 
-;============================== Program 1 ==============================
+; Program 1 ==============================
 ; Evertything between here and the next #IfWinActive will ONLY work in someProgram.exe
 ; This is called being "context sensitive"
 ; #IfWinActive, ahk_exe someProgram.exe
@@ -170,4 +206,4 @@ ExitApp
 Key=Value
 */
 
-;============================== End Script ==============================
+; ============================== End Script ==============================
