@@ -1,6 +1,6 @@
 ﻿{
-  "homeSystem": "Varati",
-  "homeStation": "Thompson Dock",
+  "homeSystem": "Bactrimpox",
+  "homeStation": "Coney Enterprise",
   "destinationSystem": null,
   "destinationStation": null,
   "squadronName": "Canonn",
@@ -14,8 +14,8 @@
   "beta": true,
   "DisableTelemetry": false,
   "plugins": {
-    "Galnet monitor": false,
-    "Inara Responder": true,
+    "Galnet monitor": true,
+    "Inara Responder": false,
     "EDDN responder": false
   },
   "Gender": "Male",
@@ -27,5 +27,5 @@
   "Maximized": false,
   "Minimized": false,
   "SelectedTab": 13,
-  "MainWindowPosition": "816,420,928,600"
+  "MainWindowPosition": "696.8,228,928,600"
 }

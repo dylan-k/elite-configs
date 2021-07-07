@@ -52,8 +52,19 @@ en-sc+m1 en-sc+m2 en-sc+m3 en-sc+m4 en-sc+m5 en-sc+m6 en-sc+m7 en-sc+f1 en-sc+f2
 
 en-rp+m1 en-rp+m2 en-rp+m3 en-rp+m4 en-rp+m5 en-rp+m6 en-rp+m7 en-rp+f1 en-rp+f2 en-rp+f3 en-rp+f4 en-rp+f5
 
-en-wi+m1 en-wi+m2 en-wi+m3 en-wi+m4 en-wi+m5 en-wi+m6 en-wi+m7 en-wi+f1 en-wi+f2 en-wi+f3 en-wi+f4 en-wi+f5
+en-rp+m1 en-rp+m2 en-rp+m3 en-rp+m4 en-rp+m5 en-rp+m6 en-rp+m7 en-rp+f1 en-rp+f2 en-rp+f3 en-rp+f4 en-rp+f5
 ```
+
+To change which eSpeak Voices are available through
+Windows, re-run the installer and specify the Voice files
+which you want to use.
+
+You can add:
+```
+en-us+m1 en-us+m2 en-us+m3 en-us+m4 en-us+m5 en-us+m6 en-us+m7 en-us+f1 en-us+f2 en-us+f3 en-us+f4 en-us+f5
+```
+
+
 
 
 - http://www.zero2000.com/free-text-to-speech-natural-voices.html

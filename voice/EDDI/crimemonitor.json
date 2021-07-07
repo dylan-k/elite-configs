@@ -1,0 +1,11 @@
+﻿{
+  "criminalrecord": [],
+  "homeSystems": {},
+  "claims": 0,
+  "fines": 0,
+  "bounties": 0,
+  "maxStationDistanceFromStarLs": 10000,
+  "prioritizeOrbitalStations": false,
+  "targetSystem": "HR 4493",
+  "updatedat": "2021-07-07T04:25:48Z"
+}

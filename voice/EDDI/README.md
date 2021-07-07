@@ -13,6 +13,7 @@ Setup
 2. symlink `custom.json` to `%AppData%\EDDI\personalities`
 3. symlink `eddi.json` to  `%APPDATA%\EDDI`
 4. run EDDI and select the new settings via `Speech Responder > Active Personality settings`
+5 In voicemeeter, import the profile `eddi.vap` from EDDI's install folder
 
 
 See also
