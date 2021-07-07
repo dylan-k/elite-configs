@@ -1,0 +1,896 @@
+===========================
+FIRST CONTACT - QUICK START
+===========================
+
+First Contact is a free Elite:Dangerous companion application, intended to enhance the information available to the player during play.
+
+It does this by reading and displaying events and status changes from the Elite Dangerous journal files, either in the main screen or in a number of optional overlays that can sit on top of the main ED display.
+
+It can also download live price and system data from EDDN and access commander profiles on Inara.
+
+** Upgrading: There are significant changes to the data that is extracted from your journal history, so I recommend allowing the journal scan to complete fully and then restart First Contact. ** 
+
+
+Version 2.0.1 - May 2021 Odyssey Patch 1
+
+This version is to try and keep up with new and changed events in the journal files.
+
+.. Fixes to keep up with changes to the journal files
+.. Fixes to account for irregularities in journal data
+.. Fixes to manage new station type - on-foot settlement
+.. Fixes for changes to on-foot status flags - additional settings
+
+Version 2.0.0 May 2021 Odyssey Compatibility
+
+The main aim of this release is compatibility between Horizons and Odyssey, allowing a single version of First Contact to run with both.
+
+.. New Keyboard Bindings tool
+.. Use a shared folder for commander data if you play on more than one PC.
+.. Change the main form colour in Dark Mode
+.. Updated Combat Panel
+
+.. Odyssey changes - More to be added after the full release.
+
+.... New Commander Resources overlay shows what you have in ship locker or backpack as well as suits and weapons.
+.... New Organics overlay - all the new organics you have scanned, plus geological and biological codex entries.
+.... Updated loadout layout to include current suit loadout.
+.... Suit, SRV and SLF layouts.
+
+Currently a lot of information is missing, such as the new engineers. 
+
+Hopefully things will improve after the release. 
+
+
+QUICK START
+
+This is a quick guide to get you started. Please ask any questions on the Discord questions channel.
+
+
+ODYSSEY NOTES
+
+First Contact was built around the concept of a commander always owning a ship of some sort. 
+
+Odyssey has changed that and now it is possible to start the game without owning a ship - just wearing a flight suit (practically naked).
+
+I have changed some of the main structure of the application to account for this, hopefully with a few improvements along the way.
+
+Where possible I have reused existing overlays to display new information to keep the number of new overlays to a minimum.
+
+There is not as much "live" information available when on-foot as there is when flying around the galaxy (at the moment).
+
+As a flight suit is (sort of) classed as a ship you can now create a First Contact layout for each different suit loadout that you have created, including the default flight suit.
+
+You can also have a different layout for each SRV and SLF and these are now shown in the Fleet overlay once you have initially deployed each vehicle.
+
+Other feature - not available in the Alpha version - will be added as soon as possible after the full release.
+
+
+STARTING FIRST CONTACT (FC)
+
+If you already have commander details saved then FC will load whatever saved data is available for that commander and start a journal scan.
+
+1. If you start FC before ED then it will wait for you to start the launcher, the game and then start playing. It will then monitor the journal and other events files and display any relevant messages.
+
+2. If you start FC after ED then it will attempt to catch-up with the current journal events and will display all the messages associated with the normal process - only faster - until it catches up.
+
+
+START UP ACTIONS
+
+At start-up FC will read through your entire journal history and extract data that can be useful, including systems, bodies and stations you have visited as well as commodities and other items bought or sold. 
+
+This data is stored in local resource files along with other static lookup files installed as part of First Contact - such as ship names, crimes and star types. 
+
+The files are loaded and updated each time the game starts and will include records relating to the current commander only. 
+
+If you have more than one commander then each will also have their own set of configuration settings. 
+
+Changing commander requires the journals to be scanned again and for the current data to be refreshed. This may take a few minutes.
+
+If you own a fleet carrier, details will be imported from the journal scan - crew details will be used for personalized messages.
+
+Any "live" EDDN price data from the previous session will be reloaded and used until new data becomes available.
+
+
+INARA
+
+If you have a profile on Inara, FC can show your Avatar - if you have one - and add a link to your profile on the main screen.
+
+Also, if you target another player, FC will be able to get information about them (including their avatar) during the scanning process - if they have a profile. 
+
+You only need to complete a level 1 scan to get the player name so we can get access to their profile even if you do not manage a full level 3 target scan.
+
+Note: Inara has a very low threshold for repeat requests, so FC will only access the profile once for each commander during the session.
+
+
+LAYOUTS
+
+Because you do not need price data when in your combat ship, or mining information when trading, the layout settings are saved whenever you swap ships - and reloaded if previously saved for each ship.
+
+SRVs and Suits (when on-foot) now have their own ID so we can save a First Contact layout for each.
+
+
+USING OVERLAYS:
+
+All of the overlay pages have the same basic functionality:
+
+OPEN
+
+Tick the box for each overlay you require in the main page Overlays Tab.
+
+MOVE
+
+Hold the mouse down over the target icon (top left) and drag the overlay.(You can also use the border of the overlay but it is a bit tricky)
+
+CLOSE
+
+Double-click the target icon, or untick the option in the settings tab.
+
+RESIZE
+
+Some of the overlays can be resized vertically to show more information. Drag the horizontal bar at the bottom of the overlay (if available) or double-click.
+
+The position and display mode of each overlay (but not the size) is stored to the FC configuration and will be saved when you exit the application or when you change ships.
+
+DISPLAY MODE
+
+Switch between Overlay (always on top) and normal Desktop mode by clicking the small vertical bar in the top right corner of each overlay.
+
+ANIMATED OVERLAYS
+
+Overlays will fade in and out when opened and closed, or move when swapping between ships and the overlay is visible in both layouts.
+
+SELECTION
+
+Most overlays have additional features when you select an item from the list, such as displaying more details, copying to clipboard or linking to Inara.
+
+To select an item double-click or highlight the item and press the ENTER key.
+
+
+TOOLS
+
+Tools work in a similar way to Overlays, but they are activated (and hidden) by clicking the button associated with that tool.
+
+The tool's position and display mode are saved but they are not automatically shown when the application starts.
+
+VOICE SETTINGS
+
+Allows a Microsoft voice to be used to read messages out loud.
+
+Access this tool to select a voice - from those available on your computer - and choose which messages are spoken.
+
+BGS POINTS CALCULATOR
+
+Used to total the number of BGS points gained from activity by multiple commanders during the tick period.
+
+Large numbers can be entered using B, M or K - such as 1.8m or 350k - rather than adding the full value.
+
+There is a conversion factor between the old values and the new re-balanced values.
+
+Bounty totals entered are currently divided by 5 (you can change this) before calculating points.
+
+* Values can now be entered as negative.
+
+KEYBOARD BINDINGS *NEW*
+
+The active bindings file (the last one to be edited) is processed to identify useful macro keyboard commands.
+
+This tool makes use of that information by displaying the keys that are mapped to each binding - and those that aren't.
+
+This tool is added to help you when creating macros or just as a reminder of which key does what!
+
+By selecting an item in the list the binding name and macro command are copied to the clipboard ready to be used in a macro.
+
+You can use either the binding name or the key/combination - use the name if you think the binding might ever change
+
+[DeployHeatSink][V]
+
+[DownThrustButton][LCTRL][D]
+
+* Note that the name for most bindings is different to those shown in-game - The Odyssey on-foot settings are identified as "humanoid".
+
+DARK COLOUR *NEW*
+
+Change the text colour used on the main form when using Dark Mode. (just for fun)
+
+Uncheck the Dark Mode option to allow the colour to be changed and then check to apply the new colour.
+
+
+PANELS ON THE MAIN SCREEN
+
+Some of these are only visible when relevant to your location.
+
+
+TOP PANEL
+
+Shows your reputation with local system faction, alliance, empire and federation. Also shows your commander inara image if available.
+
+
+SHIP STATUS
+
+The ship status panel is visible when in a ship or srv and shows a number of settings relevant to the vehicle as well as the fuel level and current legal status.
+
+Hover over each button to see what it relates to.
+
+SUIT STATUS *NEW*
+
+This shows the status of the suit (when on foot) including temperature and gravity warning, oxygen and health levels (when implemented) as well as current tool or weapon.
+
+I am hoping for more "live" information to be available in the future. (At the moment the oxygen and health level are not being updated.)
+
+Below this will be one of four panels:
+
+NAVIGATION *UPDATED*
+
+* Multiple "PINS" are now automatically added to identify where you left your ship or SRV when going out on foot.
+
+1. When flying around a planet or when you are in an SRV or on foot, the navigation panel will be shown displaying your current latitude, longitude, heading and altitude.
+
+2. You can enter specific target coordinates manually by editing the latitude and longitude and clicking the Target icon.
+
+When leaving a ship or SRV the current position will be pinned so you can find your way back. When a ship is recalled the coordinates are updated when it lands.
+
+TARGET - manually added target
+SHIP - where you left your ship, or where it has now landed
+SRV - where you left your srv (when on foot)
+DROP - where you were dropped off by dropship, taxi or crew ship
+
+Additional information about the Bearing and Distance to the target are shown when target coordinates have been entered or a target selected.
+
+* The planet's radius is now available without having to scan the body, so distance calculations should always be possible.
+
+* Odyssey does not appear to detect settlements until entering the glide.
+
+The MATRIX will indicate which way you have to TURN in order to be heading in the right direction:
+
+-*- Straight ahead
+---
+---
+
+---
+--* Turn right
+---
+
+---
+---
+-*- It's behind you!
+
+Note that two adjacent points can be shown at the same time on the matrix where the direction is between those two points.
+
+**- Head slightly left
+---
+---
+
+In the distance and bearing panel the three indicators -*- show when you are within 10 degrees of your target.
+
+The colour of the matrix will also change based on the current distance to your target: 
+
+Blue   < 1Km
+Cyan   < 10Km
+Yellow < 100Km
+Orange < 1000Km
+Red    > 1000Km
+
+When approaching a planet, FC will automatically select the coordinates for each settlement as you fly close to it, however this may not be the location you are aiming for!
+
+When entering the final glide it will try and identify the target settlement again and show distance and bearing. 
+
+If there are several settlements close to each other then it may pick the wrong one depending on the order in which ED presents the information.
+
+But you can now select any of the target settlements from the drop-down list.
+
+You can enter coordinates manually into the target fields - such as the Jameson crash site - then click the target icon to create a new custom target.
+
+
+COMBAT MODE *UPDATED*
+
+If in combat mode (but not in an SRV or on foot) the current kill and bounty totals are shown. 
+
+* The duplicated target details have been removed.
+
+This panel now includes a list of factions and how much bounty has been collected for each (when using a KWS)
+
+Combat and capital ship bonds are shown when in combat zones.
+
+* Note that the bounty values shown are directly from the journal files and actual values will be about 5x greater.
+
+
+CARRIER DETAILS
+
+If you own a carrier and in analysis mode (and not on a planet or in a station) then carrier details (location, balance, load, fuel and access) are shown.
+
+
+ESTIMATED EXPLORATION VALUE
+
+This is an estimate of the value of all scanned body values since you last sold any cartographic data. 
+
+The total does not include any unsold data from before this date, only new scan estimates since your last visit to the cartographic office.
+
+
+TABBED PAGES:
+
+The tabbed pages show details of contacts with other players, NPCs and systems, as well as the overlay and program settings.
+
+
+MESSAGES
+
+Displays (and optionally logs) messages to from other players and (optionally) from NPCs
+
+
+CONTACTS
+
+Displays (and optionally logs) both players and NPCs that you have targeted and scanned.
+
+
+SYSTEM
+
+Displays (and optionally logs) information about visited systems (automatically or after a honk) as well as any bodies already scanned. 
+
+It identifies Fleet carriers and large stations, but can only identify outposts and settlements that you have previously visited - or at least flown close to.
+
+Shows resource sites and combat zones as well as any USS if you have targetted them (or scanned the nav beacon).
+
+Data selected for logging will be saved when First Contact closes.
+
+Planet Codes:
+
+[L] = landable
+[T] = Terraformable (usually high value)
+[V] = Volcanism - geysers, magma etc.
+[A] = Has an atmosphere
+[R] = Has rings
+
+SETTINGS:
+
+* Select comms channels
+
+* Logging options
+
+* Use Live price data and import body, system and station data
+
+* Use event-based macro commands
+
+* Use Inara Profile
+
+* Show overlay animation - fade in/out and move - when changing ships.
+
+* Select a windows voice to read all of your messages.
+
+Note that voice only works when there are fewer than 5 messages in the queue, as with sounds.
+
+
+OVERLAYS:
+
+These can be positioned on top of the main Elite screen (depending on display options - I use borderless), or on a separate screen
+
+Use the slider to control the scaling of the overlays between 50 and 150%
+
+
+CARGO
+
+Shows current ship cargo. Useful when mining to see what you have collected. Mission goods are shown in a different colour, as are stolen items.
+
+
+COMMANDERS
+
+Shows an alphabetical list of all the commanders you have ever scanned (to level 1) or received a message from. 
+
+ Cyan - Someone you have scanned AND is a member of your squadron **
+
+ Orange - Another commander you have scanned.
+
+ Yellow - A commander you have received a message from (not necessarily directed at you) in the local, squadron, wing, friend or player channels.
+
+Double click a commander name to show where and when you met and access links to INARA.
+
+** The Ship Targeting event contains the Squadron ID of players that you scan, however your commander record only provides the Squadron Name (and not the ID). 
+
+** So in order to create a squadron match (shown in cyan) you need to enter your Squadron ID into First Contact manually, replacing XXXX with your squadron ID.
+
+** Click on the squadron name in the commander details panel and enter your squadron ID. You can then hide the ID by clicking the squadron name again.
+
+
+DISCOVERY 
+
+This is my ATTEMPT at showing a list of systems or bodies that you have discovered or mapped.
+
+It is based on your system scanning history, use of the SAA mapping tool and the sale of exploration data. 
+
+Unfortunately the Journal does not provide a definitive way to identify your discoveries so it is probably only about 90% accurate.
+
+In particular older scan data does not include the "WasDiscovered" value so First Contact assumes that all records without this value have already been discovered - this isn't necessarily true.
+
+* Bodies that have already been discovered - by someone else - are shown in grey.
+* Mapped bodies are shown in cyan.
+* Bodies which you have (probably) discovered are in orange.
+* Bodies that are both discovered and mapped are in green
+
+If you revisit a previously discovered system it should be automatically selected.
+
+You can also copy the system name into the clipboard to check in the Galaxy Map.
+
+First Footing will be included when I can extract that information from the journal files, at the moment it is not available.
+
+
+ENGINEERING 
+
+Shows a list of all currently known engineers and colour-codes them according to your access level.
+
+Grey - Unknown
+Cyan - Known
+Orange - Invited
+Green - Unlocked
+
+Further details are available when selecting the engineer - location and rank. Also links to Inara for additional information.
+
+New Odyssey engineers will be included when data is available.
+
+
+EXPLORATION 
+
+This overlay shows information about scanned bodies in the current system.
+
+It shows atmosphere and volcanism (for bodies) as well as mass (in either solar or earth mass), gravity, surface pressure (atmospheres) and temperature in degrees Kelvin.
+
+The base value of each body is shown, not including any bonuses.
+
+Landable bodies are identified [L] as are terraformables [T]. 
+
+Planetary (and stellar) rings are include once scanned individually.
+
+High value bodies and signal sources are added to a list in the lower panel:
+
+Earthlike, Water and Ammonia worlds are always included (whether terraformable or not).
+
+Other bodies are only included when terraformable and bodies are shown in grey once they have been mapped.
+
+Any detected signals [~] that are identified in the system are included. 
+
+This includes planetary-ring hot-spots, geological and biological locations, human settlements etc.
+
+Notable stellar phenomena are added as signals and identified with [*] - once scanned the type of phenomena will be updated. 
+
+An estimated system total is shown after each body is scanned or mapped. This does not include codex vouchers and some bonuses.
+
+* Shows if the body has rings [R]. Hover over the button to show number of rings if active.
+
+
+FLEET *UPDATED*
+
+Shows your entire fleet of ships - updated after you have visited the shipyard. 
+
+The Ship ID (Callsign) is only added when swapping or renaming ships, and will be updated from historical journal data.
+
+Ships are colour coded depending on location:
+
+Green - current ship
+Orange - at current location
+Cyan - in transit
+Red - wanted
+Grey - at another location
+
+Ships that are sold - at a shipyard or on rebuy - are removed from the list.
+
+Clicking on each ship will show more details.
+
+There is a timer on this overlay that checks transit times and updates the ship status and arrival.
+
+SRV and SLF vehicles are also included once they have been launched from the ship. They are linked to a specific parent ship.
+
+
+IMAGES 
+
+This overlay allows you to view, copy and save any images that has been taken in-game by pressing F10.
+
+Elite saves these images as bitmaps to your User/Pictures folder but does nothing else with them, even though it saves additional information to the Journal.
+
+First Contact uses this information to recover any images you have taken and show the image along with the associated data - where and when the image was taken.
+
+The overlay allows you to save the image as a BMP, PNG or JPEG file, or copy to the clipboard for pasting into applications such as Discord or Facebook.
+
+Double-click to open the image in your default image application.
+
+
+LOADOUT *UPDATED*
+
+Shows the loadout of the current ship or your current suit. 
+
+* Click the button (top right) to change between the two views.
+
+The ship items are grouped by colour and ordered by module size or standard positioning.
+
+Suit items are coloured for functionality - weapons, tools or suit type.
+
+The + sign shows if the ship module is engineered, personal items are prefixed with ".." or with the class (grade) of the actual suit - if known.
+
+Double-click a ship module to show the main engineering blueprint applied to each module. The blueprint names displayed may be different from that displayed in the game.
+
+Experimental Effects are not logged specifically in the journal so cannot be displayed by name.
+
+Unfortunately I do not have access to information about all the modules, in particular guardian modules and those related to powerplay (any information gratefully received).
+
+Also the status of modules is NOT updated during the session unless a ship loadout event is processed - at a shipyard, boarding from SRV etc.
+
+Your current suit loadout can also be viewed showing suit type (?) stardard equipment and current weapons.
+
+
+MACROS
+
+Most keyboard macros are activated by pressing a button on the Macro Overlay, but can also be linked to events and "buttons" on the main screen.
+
+The ED keyboard layout is complicated and in most cases we need to apply a SHIFT around each key press. 
+
+If you know the Key that is used for a function then you can apply it directly, or you can use the name of the action from the BINDS file:
+
+[SHIFT][V][SHIFT]
+[SHIFT][DeployHeatSink][SHIFT]
+
+Some commands are attached to the ship's status buttons, for example: ship:button:landinggear, that will raise or lower the landing gear when clicked.
+
+You can also assign macros to any journal event - these can be activated in the Settings Tab. They can be used to automatically refuel on landing or to fire chaff when under attack etc. 
+
+They are also used to reset the focus to E:D automatically when in danger - previously this was hard-coded.
+
+These macros can be edited in the macro.resource file which is located in the commanders resource folder.
+
+The Macro Overlay allows you to assign up to 30 different commands to buttons on each page. 
+
+A macro can consist of several different commands, seperated by one or more "+" signs which adds a small delay.
+
+You can now add up to 10 pages of macros - that's 300 commands!
+
+To activate a macro command left-click the mouse or press ENTER for the selected button.
+
+To edit the macro for the selected button use the right-mouse button or press INSERT
+
+Use the TAB key to select the required button.
+
+To rearrange the buttons on the page hold down the CTRL key and then drag and drop using the mouse.
+	
+Messages can be injected into the open COMMS panel by assigning text to the buttons. The text should be within [square brackets] and will be ignored if the comms panel is not open.
+
+If the macro has a description then this will be shown in the message overlay. The description will be prefixed with "MACRO:" and displayed in blue.
+
+Note that you can also associate a sound with this event by adding a macro.wav file of your choice to the media folder.
+
+
+EDIT MACROS
+
+You can now edit all of the macros - events and main screen "buttons" from the Macro Overlay.
+
+Expand the overlay by dragging the bottom bar or double-clicking it - you will see a list of all the non-button macros at the bottom of the page.
+
+Select an item from the list and you can edit it. You can also create a new EVENT macro by (carefully) changing the event at the top of the edit page (not the macro name).
+
+For macros linked to game events the format must be "event:" plus the event name (as defined in the Journal Documentation) plus any additional parameters (message me if you need to know)
+
+event:launchdrone:collection
+
+Do not change the name of any of the other "button" events.
+
+** A more detailed macro document is available in the documents folder.
+
+
+MARKET
+
+Shows the commodities that are available at the current market.
+
+* Now shown in the same order as the station rather than by stock/demand.
+
+Items not coloured red will make a profit, when sold or bought at galactic average prices - the amount of profit is colour-coded.
+
+Blue   > 200%
+Cyan   100-200%
+Green  50-100%
+Yellow 0-50%
+Orange = galactic average
+Red    < 0%
+
+Double-click an item to show more details and update the prices overlay.
+
+Note that the galactic average price is not available when on a carrier so will show in orange.
+
+* The best (and worst) prices are shown for each commodity based on current live prices, in the lower part of the screen.
+
+
+MATERIALS
+
+Shows materials collected this session, or all of your material stock - once the game has started.
+
+MINING
+
+Shows the content of the current asteroid after prospecting. You do not need to target the prospecting limpet to view this information, so are free to check other targets. 
+
+The display shows the quality of the content and the number of limpets you have available.
+
+The overlay now keeps track of all the asteroids that you have scanned in the current session.
+
+If you are not mining the overlay shows the material content of any bodies in the current system that you have previous scanned, along with landing information. 
+
+* Detected signals for the current body are also shown, prefixed with [~]
+
+The LANDABLE label is colour-coded green, yellow, orange or red depending on how high or low the gravity is. Hover over the label to find out the exact value.
+
+When you approach a planet with a high or low gravity you should now get a warning message.
+
+
+MESSAGES
+
+Shows messages generated by the application and can also play sounds based on the message prefix: SYSTEM, SHIP, DANGER etc. as stored in the media folder.
+
+Most messages are shown for about 5 seconds, however this time will get shorter depending on how many messages are in the queue.
+
+Comms messages are now prefixed with the channel name: NPC, WING, SQUADRON etc. The sound associated with all of these is COMMS.WAV if it exists.
+
+
+MICRO RESOURCES *NEW*
+
+This shows all of the new items that have been introduced in Odyssey that have been collected by the player.
+
+It also includes all consumables such as med kits and grenades that can be transferred to the players backpack from the ship locker.
+
+These are in several different categories each in a different colour:
+
+Data:
+Components: Chemicals, Circuits, Tech
+Items:
+Consumables:
+
+By clicking the button (top right) you can get a list of all your weapons and suits. 
+
+It seems that you can have more than one of each type, but it is tricky to keep track of them - the only difference will their grade/class and how they have been engineered.
+
+(I don't know yet how this will be recorded in the journal)
+
+
+MISSIONS
+
+Shows all missions that you have accepted during this session for both Horizons and Odyssey. 
+
+Active missions are saved when the application is closed, reloaded on the next session and their status updated.
+
+Missions are shown in order of expiry date and are colour coded as they get closer to expiring. Additional information is available by selecting each mission.
+
+Community Goals - that you have signed up for - are included in white. The mission "count" value is the player percentile.
+
+Note: Not all of the original mission data is available when you restart Elite so FC will save incomplete mission information when closing.
+
+Note: Wing missions are not recorded in the journal files so cannot be managed by First Contact in the missions overlay.
+
+
+ORGANICS *NEW*
+
+Shows the first codex entry (from your Journal) for each different geological or biological discovery. 
+
+Also shows organics that have been scanned by the genetic sampler in Odyssey.
+
+[^] Codex Organic - Yellow
+[*] Codex Anomalies - Magenta
+[~] Genetic Sampler - Cyan
+
+Identifies the system or planet for first instance of each item and the distance, if you want to revisit.
+
+
+PRICES
+
+Shows the latest buy and sell prices for the selected commodity, both from your journal history and from live EDDN data. 
+
+Prices from fleet carriers can be included, but they do move and may have restricted access so are not guaranteed. 
+
+You can set a maximum distance from your current location, and only systems within that range are included. These will update as you move around.
+
+Prices are only shown for stations that are large enough for your ship AND have enough supply (or demand) for a full load in your current ship. 
+
+If a price is too old or is now out of range or the stock/demand changes then it may show an EXPIRED state until a new (valid) price is available. 
+
+If you change ships it may take a while before the prices are updated to reflect the current configuration. 
+
+* The timeout period can now be changed (in hours) after which older prices may be removed or replaced with a newer - but not necessarily better - price.
+
+* Current live prices are now saved at the end of the session and reloaded when First Contact starts.
+
+* Price timeout can be set to zero so that prices are never removed unless replaced with a better price (or ship capacity or distance changes)
+
+
+PROFILE
+
+Shows the Inara profile details that are available for the targeted player or selected friend. You can then link back to the player or squadron profiles on the Inara site by clicking the inara logo.
+
+There is also an option to manually enter a player name and access their profile. Extend the overlay vertically to show this option. 
+
+* Note that there are restrictions on the number of times you can access a profile on Inara. *
+
+You can now use your own Inara API key if you wish but the generic key included should work well enough - how many commanders do you meet each day?
+
+
+REWARDS
+
+Shows all of your current rewards by system and faction. Includes mission rewards, exploration data sales, bonds, bounties and trade profit - basically anything that might affect your reputation or your bank account!
+
+Mission rewards are shown in cyan and exploration in yellow, bounties in red etc. 
+
+Any black market trades are now shown separately from normal trade in magenta.
+
+You can copy the current data to the clipboard and you can then remove all of the current items to reset the totals. 
+
+You can use this information to record your actions when working for a faction in the background simulation.
+
+The number of missions is now included for INF and REP rewards, in some cases only the mission count is required.
+
+ Influence: +9 INF [3]
+
+Fleet carriers have a faction of "Fleetcarrier" so I have used the Carrier ID instead when handing in exploration data or trading.
+
+Note: When redeeming (bounty) vouchers on fleet carriers, the faction is not identified if they are not from the same system. In this case "Unknown Faction" is used.
+
+Note: Some wing missions are not recorded in the journal files so cannot be included in the rewards.
+
+* Black Market trades are now included, as well as any trade losses.
+
+There is now a value for BGS points gained by each of the following activities: Exploration, Bounties, Trade and  Influence (from missions and passengers).
+
+There is a different formula for each of these, with a number of BGP points allocated for each activity.
+
+ Trade Profit: 738.05K = 1pt
+ Influence: +9 INF [3] = 1pt
+
+For example, one bgs point is allocated for 4 inf. To gain 2 points you need 16 inf - increasing by a factor of 4 for each point.
+
+Only whole points are shown as a general guide for each valid activity. 
+
+Actual points will be calculated on the total contributions from all commanders for the tick period (see the BGS calculator tool).
+
+
+ROUTE
+
+Shows the currently plotted route. Identifies non-fuel stars and can also convert the route into carrier jumps of approx. 500LY. Try the Crab nebula as an example. 
+
+Note: If you change the route (but not the destination) by adjusting the ship mass, then the data is not updated in the Elite NavRoute file.
+
+
+SERVICES
+
+This overlay shows lists of stations and carriers that provide certain facilities that are within your selected range and have a pad of the correct size. 
+
+Interstellar Factors and Material traders are particularly useful. 
+
+Note: Because this is based mainly on your journal history some of the facilities shown may no longer be accurate. 
+
+Fleet carrier services are included only if you have previously landed on them.
+
+Station services are updated when you next visit that station or from EDDN data when available.
+
+Note: Double-clicking on a station or a carrier will link to the Inara page for more information.
+
+
+TARGET 
+
+Shows the currently scanned target along with their legal status, the state of their shields and hull, and if they are a player. 
+
+If they are a wanted npc they will be in red. Check before you open fire!
+
+In combat zones the ships on both sides (lawless) will initially be in Orange when targetted. 
+
+Once you have received your first faction bond, First Contact will be able to identify which side you are on and identify enemy ships.
+
+Don't shoot the green ones!
+
+
+SCANNING 
+
+When a body is scanned First Contact will now show you an estimation of it's value so you can decide if you want to take a closer look. 
+
+Bodies that are valid for Terraforming are the most profitable so First Contact will also alert you when you have scanned one.
+
+The bonus value is made of two values: an estimated value for discovering the body first and an estimated value for Mapping the body - however you have to actually go and map the planet with a surface scanner first!
+
+The first discovery bonus will not be included if the body is already recorded as having been discovered.
+
+There are other bonuses added when you sell your data, such as scanning the entire system, which I have not included.
+
+**See the Exploration Overlay
+
+
+LIVE EDDN DATA
+
+Price data is downloaded LIVE from EDDN during each session and the best buy and sell price shown in the Prices Overlay. 
+
+Optionally this can include prices from fleet carriers, although access is not guaranteed.
+
+Any relevant details from your journal history will be added if you have visited the system or station previously.
+
+Only prices for systems within your selected range are included, and where there is enough stock/demand for a full load and where there is a landing pad of the correct size.
+
+** Note that prices are uploaded by EDMC (and other applications) when a player accesses the market, not when specifically buying that commodity.
+
+** First Contact does not upload any data to EDDN.
+
+The live price data is now saved and the timeout period (in hours) can be changed. A zero value means that prices never timeout.
+
+The price will be invalidated when there is no longer a sufficient supply or demand and will be replaced by the next available market price.
+
+Additional system and station data is downloaded from EDDN so that the prices and markets match your current ship configuration as much as possible. 
+
+Live body data is also downloaded and stored (where the system is within your selected range) so that details such as planet gravity, materials and radius are available to other functionality.
+
+You can select whether the system, station and body data is imported (and saved) and also if the best price data is read - if you are out exploring it will not be useful.
+
+** Only systems within the distance/range setting are included, but there are a lot of systems and bodies even in a restricted area.
+
+** If the "live" data files get out of control you can delete them and start again - your own exploration history is not affected.
+
+Note that when you close the application only data within the selected range - based on your current location - will be saved. 
+
+If you are somewhere outside of your normal operating area you can keep the previous saved live data by turning off the Live Data option before closing First Contact.
+
+First Contact will create a firewall rule (sidsoft.firstcontact.exe) for incoming EDDN data on port 9500, although in most cases this is not necessary.
+
+
+OTHER CONTROLS
+
+At the top-left of the screen is an orange arrow. Click this to send focus back to the ED display. 
+
+If you have a pilot on-board then an icon will be shown above the commander details. 
+
+Also visible is the current mode (combat/analysis) and wing status.
+
+
+ACTIVITY INDICATORS
+
+The flashing lights (bottom left) show what is happening behind the scenes.
+
+Orange - Flashing when monitoring the journal, while the game is running.
+Red    - Flashing when doing a catchup on an active journal when started.
+
+Yellow - Flashing when reading the journal history.
+Yellow - Steady while writing data to files.
+
+Cyan -   Steady when trying to connect to EDDN server - will timeout after 10 seconds.
+Cyan -   Flashing when processing live data from EDDN.
+
+
+RESOURCES
+
+The resource files in the edapi\ folder, contain static (lookup) data that FC uses - such as the commodities, ranks and Ships. 
+
+Dynamically generated data from your own journal files (or from the live EDDN data feed) is stored in a folder for each commander using the Frontier Commander ID.
+
+These files are stored in JSON format which makes them easy to read and write.
+
+Ship layout data is stored in a config file using the commander and ship in-game IDs.
+
+
+FRIENDS
+
+Displays friends that are currently online. Click on a friend icon shows their commander profile from Inara (if available and the profile option is activated)  
+
+Friends often go offline without ED registering the event.
+
+
+SOUNDS
+
+There are only two sounds used by default in FC - Danger.wav and Warning.wav. These are linked to the displayed message category - either DANGER: or WARNING:.
+
+You can change these just by replacing the files with one of the same name, and you can also assign different sounds to other message categories by adding a new .wav file: Attention, Ship, Carrier, Comms or System.
+
+
+PERFORMANCE NOTES
+
+First Contact generally takes less than 5% of the CPU on my PC (ED is usually more than 40%) except when scanning the journal files when it can be nearer 20%. 
+
+Initially FC reads in the last set of resource data from the previous session files and then updates once the journal files have been read again to include any new data. 
+
+It usually takes less than a minute to read over 2000 files on my computer, looking for trade, station, system and body data - it is much faster if you run FC before starting ED. 
+
+It supplements this data with station and system data read from EDDN, so the live update does not start until the history has been read.
+
+FC will read all of the journal files again each time it starts in case I have made changes to read additional data from the history.
+
+
+Enjoy
+
+
+Copyright 2020-2021 Chris Sidney, chris@Sidsoft.net, Commander Sidonius Darkstar
+
+First Contact and Elite:Connect are made available under the GNU General Public Licence (details in the \Documents folder)
+
+Distance & Bearing calculations from https://www.movable-type.co.uk/scripts/latlong.html
