@@ -67,26 +67,33 @@ Send {LWinDown}{d}{LWinUp}}
 ; Run programS. Note that most programs will require a FULL file path.
 ; Apps with the longest startup are listed first.
 
-; Elite Observatory
-Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
+; EDMC EDMarketConnector
+Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
 
-; Elite Discovery
+; EDD Elite Discovery
 Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
 
 ; VoiceAttack
 Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
 
-; EDMarketConnector
-Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
+; StatusDisplay
+Run, M:\Games\Elite Dangerous\Status Display\StatusDisplay.exe, M:\Games\Elite Dangerous\Status Display\
 
-; FirstContact
-Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
+; EDO Elite Observatory
+Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 
 ; EliteG19s
 Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
 
+; FirstContact
+Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
+
 ; Elite Dangerous Scout
 Run, M:\Games\Elite Dangerous\Elite Dangerous Scout\EDScout.exe, M:\Games\Elite Dangerous\Elite Dangerous Scout\
+
+; Game Glass host
+Run, C:\Program Files\GameGlass\launcher.exe
+
 
 ; Elite Toolbox
 ; Run, M:\Games\Elite Dangerous\elite-toolbox-edtb\toolbox.exe
@@ -100,6 +107,9 @@ Send {LWinDown}{d}{LWinUp}}
 ; note: in steam my shortcut is set to use a tool to skip the launcher
 ; Steam launches the default way if min-ed-launcher is not installed
 ; see also https://github.com/Rfvgyhn/min-ed-launcher
+; Elite Dangerous Scout
+Run, C:\Program Files (x86)\Steam\steam.exe -bigpicture, C:\Program Files (x86)\Steam
+WinWait, ahk_exe steam.exe
 run, steam://rungameid/359320
 
 ;; only after the game is actually running 

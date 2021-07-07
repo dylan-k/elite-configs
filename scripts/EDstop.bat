@@ -4,7 +4,6 @@
 
 taskkill /f /im always-on-top.exe
 taskkill /f /im EDEngineer.exe
-taskkill /f /im AutoHotkey.exe
 taskkill /f /im CaptainsLog.exe
 taskkill /f /im EDLaunch.exe
 taskkill /f /im EDMarketConnector.exe
