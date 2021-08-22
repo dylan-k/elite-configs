@@ -23,7 +23,7 @@
     },
     {
       "edname": "bulkscandata",
-      "amount": 18,
+      "amount": 24,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -65,7 +65,7 @@
     },
     {
       "edname": "basicconductors",
-      "amount": 12,
+      "amount": 15,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -93,7 +93,7 @@
     },
     {
       "edname": "carbon",
-      "amount": 11,
+      "amount": 17,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -107,35 +107,35 @@
     },
     {
       "edname": "chemicalmanipulators",
-      "amount": 8,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 150
     },
     {
       "edname": "chemicalprocessors",
-      "amount": 7,
+      "amount": 10,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "chemicalstorageunits",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "chromium",
-      "amount": 3,
+      "amount": 1,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "scandatabanks",
-      "amount": 33,
+      "amount": 45,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -163,7 +163,7 @@
     },
     {
       "edname": "conductiveceramics",
-      "amount": 18,
+      "amount": 0,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -198,14 +198,14 @@
     },
     {
       "edname": "industrialfirmware",
-      "amount": 31,
+      "amount": 37,
       "minimum": null,
       "desired": null,
       "maximum": 200
     },
     {
       "edname": "crystalshards",
-      "amount": 21,
+      "amount": 30,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -226,14 +226,14 @@
     },
     {
       "edname": "shieldcyclerecordings",
-      "amount": 21,
+      "amount": 33,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "encodedscandata",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 150
@@ -254,14 +254,14 @@
     },
     {
       "edname": "scrambledemissiondata",
-      "amount": 21,
+      "amount": 27,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "exquisitefocuscrystals",
-      "amount": 0,
+      "amount": 1,
       "minimum": null,
       "desired": null,
       "maximum": 100
@@ -275,7 +275,7 @@
     },
     {
       "edname": "uncutfocuscrystals",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -289,21 +289,21 @@
     },
     {
       "edname": "galvanisingalloys",
-      "amount": 39,
+      "amount": 42,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "germanium",
-      "amount": 0,
+      "amount": 2,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "gridresistors",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -373,7 +373,7 @@
     },
     {
       "edname": "heatdispersionplate",
-      "amount": 9,
+      "amount": 12,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -408,7 +408,7 @@
     },
     {
       "edname": "hybridcapacitors",
-      "amount": 4,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -429,14 +429,14 @@
     },
     {
       "edname": "shieldsoakanalysis",
-      "amount": 12,
+      "amount": 27,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "iron",
-      "amount": 0,
+      "amount": 5,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -464,21 +464,21 @@
     },
     {
       "edname": "mechanicalcomponents",
-      "amount": 27,
+      "amount": 0,
       "minimum": null,
       "desired": null,
       "maximum": 200
     },
     {
       "edname": "mechanicalequipment",
-      "amount": 24,
+      "amount": 30,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "mechanicalscrap",
-      "amount": 6,
+      "amount": 10,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -513,7 +513,7 @@
     },
     {
       "edname": "embeddedfirmware",
-      "amount": 0,
+      "amount": 9,
       "minimum": null,
       "desired": null,
       "maximum": 100
@@ -527,21 +527,21 @@
     },
     {
       "edname": "nickel",
-      "amount": 12,
+      "amount": 1,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "niobium",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 200
     },
     {
       "edname": "symmetrickeys",
-      "amount": 6,
+      "amount": 15,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -604,7 +604,7 @@
     },
     {
       "edname": "phosphorus",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -646,14 +646,14 @@
     },
     {
       "edname": "protolightalloys",
-      "amount": 0,
+      "amount": 12,
       "minimum": null,
       "desired": null,
       "maximum": 150
     },
     {
       "edname": "protoradiolicalloys",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 100
@@ -674,14 +674,14 @@
     },
     {
       "edname": "ruthenium",
-      "amount": 2,
+      "amount": 1,
       "minimum": null,
       "desired": null,
       "maximum": 150
     },
     {
       "edname": "salvagedalloys",
-      "amount": 5,
+      "amount": 8,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -709,7 +709,7 @@
     },
     {
       "edname": "shieldemitters",
-      "amount": 27,
+      "amount": 33,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -737,14 +737,14 @@
     },
     {
       "edname": "sulphur",
-      "amount": 0,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "encryptioncodes",
-      "amount": 9,
+      "amount": 12,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -758,7 +758,7 @@
     },
     {
       "edname": "tellurium",
-      "amount": 0,
+      "amount": 1,
       "minimum": null,
       "desired": null,
       "maximum": 150
@@ -891,7 +891,7 @@
     },
     {
       "edname": "tungsten",
-      "amount": 1,
+      "amount": 0,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -905,7 +905,7 @@
     },
     {
       "edname": "scanarchives",
-      "amount": 6,
+      "amount": 12,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -919,21 +919,21 @@
     },
     {
       "edname": "encryptedfiles",
-      "amount": 12,
+      "amount": 30,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "vanadium",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "wornshieldemitters",
-      "amount": 24,
+      "amount": 27,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -947,14 +947,14 @@
     },
     {
       "edname": "zinc",
-      "amount": 0,
+      "amount": 4,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "zirconium",
-      "amount": 0,
+      "amount": 15,
       "minimum": null,
       "desired": null,
       "maximum": 250

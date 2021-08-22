@@ -76,27 +76,30 @@ Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
 ; VoiceAttack
 Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
 
-; StatusDisplay
-Run, M:\Games\Elite Dangerous\Status Display\StatusDisplay.exe, M:\Games\Elite Dangerous\Status Display\
-
 ; EDO Elite Observatory
 Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 
+; Elite Dangerous Journal Processor
+Run, M:\Games\Elite Dangerous\EDJP\EliteDangerousJournalProcessor.exe, M:\Games\Elite Dangerous\EDJP\
+
+; StatusDisplay
+; Run, M:\Games\Elite Dangerous\Status Display\StatusDisplay.exe, M:\Games\Elite Dangerous\Status Display\
+
 ; EliteG19s
-Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
+; Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
 
 ; FirstContact
-Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
+; Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
 
 ; Elite Dangerous Scout
-Run, M:\Games\Elite Dangerous\Elite Dangerous Scout\EDScout.exe, M:\Games\Elite Dangerous\Elite Dangerous Scout\
+; Run, M:\Games\Elite Dangerous\Elite Dangerous Scout\EDScout.exe, M:\Games\Elite Dangerous\Elite Dangerous Scout\
 
 ; Game Glass host
-Run, C:\Program Files\GameGlass\launcher.exe
-
+; Run, C:\Program Files\GameGlass\launcher.exe
 
 ; Elite Toolbox
 ; Run, M:\Games\Elite Dangerous\elite-toolbox-edtb\toolbox.exe
+
 ; EDDI: normally runs inside of voiceattack, so it's disabled here
 ; "C:\Program Files (x86)\VoiceAttack\Apps\EDDI\EDDI.exe"
 
@@ -147,6 +150,7 @@ Loop
     Process, Close, Observatory.exe 
     Process, Close, toolbox.exe
     Process, Close, VoiceAttack.exe
+    Process, Close, EliteDangerousJournalProcessor.exe
 }
 
 ; Always on Top ----------------------------------------------------------------

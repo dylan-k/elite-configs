@@ -5,7 +5,7 @@
         "IsVerbose": false
     },
     "EliteFolder": "C:\\Program Files (x86)\\Steam\\steamapps\\common\\Elite Dangerous\\Products\\elite-dangerous-odyssey-64",
-    "ScriptsFolder": "%appdata%\\EliteG19s\\Scripts",
+    "ScriptsFolder": "C:\\Users\\Dylan\\AppData\\Roaming\\EliteG19s\\Scripts",
     "Music": {
         "DefaultFolder": "M:\\Music",
         "PauseOnJump": false,
@@ -22,37 +22,46 @@
         "LoadOwnPlaylists": true,
         "UseInternalPlayer": false
     },
-    "InitialVolume": 1.0,
+    "InitialVolume": 0.3,
     "DisplayOptions": {
         "UseWindow": "auto",
-        "InitialScreen": "Status",
+        "InitialScreen": "Camera",
         "SaveWindowsOnExit": true,
         "DisplayMessages": "all",
         "DisplayEveryFrame": 1,
         "UseUniqueWindowTitle": false,
-        "Windows": [{
-            "X": -1930,
-            "Y": 240,
-            "ShowTitleBar": true,
-            "IsAlwaysOnTop": true,
-            "IsWidescreen": true,
-            "ShowOnDisplay": {
-                "Name": "LA2405 (#3)",
-                "Id": "\\\\.\\DISPLAY3"
-            },
-            "FullScreen": true,
-            "ResolutionMultiplier": 3.0,
-            "DisplayEveryFrame": 1,
-            "ActiveScreen": "Status",
-            "Screens": {
-                "Orrery": [
-                    "{\"DefaultZoom\":1,\"ZoomLevel\":10,\"Speed\":1}"
-                ],
-                "AudioVisualization": [
-                    "{\"ActivePlugin\":0}"
-                ]
+        "Windows": [
+            {
+                "X": -2400,
+                "Y": 0,
+                "ShowTitleBar": false,
+                "IsAlwaysOnTop": false,
+                "IsWidescreen": true,
+                "ShowOnDisplay": {
+                    "Name": "LA2405 (#3)",
+                    "Id": "\\\\.\\DISPLAY3"
+                },
+                "FullScreen": true,
+                "ResolutionMultiplier": 1.0,
+                "DisplayEveryFrame": 1,
+                "ActiveScreen": "Status",
+                "Screens": {
+                    "Orrery": [
+                        "{\"DefaultZoom\":1,\"ZoomLevel\":10,\"Speed\":1}"
+                    ],
+                    "RssItem": [
+                        "Game performance",
+                        "Is there any way at all to get this into playable FPS? I have a Ryzen 3900xt with a 12 GB Titan and 32Gb of Ram, and it's a friggin slideshow on 1080p.",
+                        "en",
+                        "News"
+                    ],
+                    "AudioVisualization": [
+                        "{\"ActivePlugin\":0}"
+                    ]
+                }
             }
-        }]
+        ],
+        "LogitechDisplays": []
     },
     "AudioVisualizationOptions": {
         "StartWith": "Cassette",
@@ -97,7 +106,8 @@
         "Maia",
         "Colonia"
     ],
-    "RadioStations": [{
+    "RadioStations": [
+        {
             "Name": "Radio Skvortsov",
             "Url": "https://fred.torontocast.com:1260/hphibirh/1/winamp.m3u"
         },
@@ -162,7 +172,8 @@
             "Url": "http://listen.shoutcast.com/roswelluforadio.m3u"
         }
     ],
-    "TVStations": [{
+    "TVStations": [
+        {
             "Name": "Galnet News Digest",
             "Username": "pwotherspoon",
             "Randomized": false,
@@ -267,7 +278,8 @@
             "State": 0
         }
     ],
-    "SpotifyPlaylists": [{
+    "SpotifyPlaylists": [
+        {
             "Name": "Elite: Dangerous OST",
             "SpotifyLink": "spotify:album:7DiKsmM1Ekr9mWYxRCMjrE",
             "IsDisabled": false
@@ -383,7 +395,8 @@
             "IsDisabled": false
         }
     ],
-    "Podcasts": [{
+    "Podcasts": [
+        {
             "Name": "Lave Radio",
             "Url": "http://laveradio.com/feed/laveradio.xml"
         },
@@ -405,7 +418,8 @@
         }
     ],
     "Websites": [],
-    "RacingMusic": [{
+    "RacingMusic": [
+        {
             "Name": "F1 Spirit",
             "Url": "https://www.msx.org/sites/default/files/downloads/music/mp3/Bart-F1Spirit-StockCar.mp3"
         },
@@ -446,10 +460,12 @@
             "Url": "https://api.soundcloud.com/tracks/138014505"
         }
     ],
-    "TwitchChannels": [{
-        "Name": "Monstercat",
-        "ChannelId": "monstercat"
-    }],
+    "TwitchChannels": [
+        {
+            "Name": "Monstercat",
+            "ChannelId": "monstercat"
+        }
+    ],
     "OnTopReplica": {
         "AttachFirstWindow": false,
         "ExePath": "C:\\Users\\Dylan\\AppData\\Local\\OnTopReplica\\OnTopReplica.exe",
@@ -457,17 +473,17 @@
     },
     "SpaceTrafficControlOptions": {
         "EnableOnStart": true,
-        "Volume": 0.25,
-        "Density": 0.4,
-        "UseSoundEffects": false,
+        "Volume": 1.0,
+        "Density": 1.0,
+        "UseSoundEffects": true,
         "OnlyInSuperCruise": false,
         "ListenNearStations": false,
         "DimMusicWhileTransmitting": false,
-        "ShowTrafficSubtitles": false,
+        "ShowTrafficSubtitles": true,
         "StartDelay": 0.0,
         "TrafficControlLocalized": true,
         "NPCVoicesEnabled": true,
-        "NPCVolume": 1.0,
+        "NPCVolume": 0.5,
         "CMDRVoicesEnabled": true,
         "CMDRVoiceLanguage": "Game",
         "CMDRChannels": {
@@ -480,56 +496,7 @@
             "Friend": true,
             "VoiceChat": true
         },
-        "VoiceOptions": {
-            "Microsoft David Desktop": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            },
-            "Microsoft Mark": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            },
-            "Microsoft Zira": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            },
-            "Microsoft Hazel Desktop": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            },
-            "Microsoft David": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            },
-            "Microsoft Zira Desktop": {
-                "IsEnabled": true,
-                "Volume": 100,
-                "MinPitch": -3,
-                "MaxPitch": 2,
-                "MinRate": 1,
-                "MaxRate": 3
-            }
-        }
+        "VoiceOptions": {}
     },
     "LogitechSettings": {
         "SetBackgroundColor": true,
@@ -555,7 +522,8 @@
     "IsUseDiscordRichPresence": true,
     "DefaultTTSVoice": "Default",
     "ArxAnimationLevel": "full",
-    "HotKeys": [{
+    "HotKeys": [
+        {
             "Function": "Up",
             "UseAlt": false,
             "UseCtrl": true,
@@ -649,12 +617,14 @@
     "NewsTicker": {
         "Note": "This section sets the Newsticker options. Maximum of three tickers, or two if you also show the Galnet Ticker.",
         "IsShowGalnetTicker": true,
-        "IsUseTextToSpeech": false,
-        "ScreenTickers": [{
-            "Name": "Reddit",
-            "Url": "http://www.reddit.com/r/EliteDangerous/new/.rss"
-        }],
-        "ArxTicker": "http://elitedangerous-website-backend-production.elitedangerous.com/galnet.rss"
+        "IsUseTextToSpeech": true,
+        "ScreenTickers": [
+            {
+                "Name": "Reddit",
+                "Url": "http://www.reddit.com/r/EliteDangerous/new/.rss"
+            }
+        ],
+        "ArxTicker": "https://feeds.feedburner.com/GalnetNews?format=xml"
     },
     "PhilipsHue": {
         "IsEnabled": false,
