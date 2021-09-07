@@ -590,13 +590,13 @@
 	<RightPanelFocusOptions Value="FocusOption_Nothing" />
 	<EnableCameraLockOn Value="1" />
 	<GalaxyMapOpen>
-		<Primary Device="28DE11FF" Key="GamePad_Back">
-			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
-		</Primary>
+		<Primary Device="28DE11FF" Key="GamePad_Back" />
 		<Secondary Device="Keyboard" Key="Key_F9" />
 	</GalaxyMapOpen>
 	<SystemMapOpen>
-		<Primary Device="28DE11FF" Key="GamePad_Back" />
+		<Primary Device="28DE11FF" Key="GamePad_Back">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
+		</Primary>
 		<Secondary Device="Keyboard" Key="Key_F11" />
 	</SystemMapOpen>
 	<ShowPGScoreSummaryInput>
@@ -1001,7 +1001,7 @@
 		<Primary Device="28DE11FF" Key="GamePad_RBumper">
 			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
 		</Primary>
-		<Secondary Device="Keyboard" Key="Key_Home" />
+		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="1" />
 	</ToggleCargoScoop_Buggy>
 	<EjectAllCargo_Buggy>
@@ -1014,7 +1014,7 @@
 		</Primary>
 		<Secondary Device="Keyboard" Key="Key_End" />
 	</RecallDismissShip>
-	<EnableMenuGroupsSRV Value="0" />
+	<EnableMenuGroupsSRV Value="1" />
 	<UIFocus_Buggy>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1194,9 +1194,7 @@
 		</Secondary>
 	</PhotoCameraToggle_Buggy>
 	<PhotoCameraToggle_Humanoid>
-		<Primary Device="28DE11FF" Key="GamePad_FaceRight">
-			<Modifier Device="28DE11FF" Key="GamePad_DPadRight" />
-		</Primary>
+		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="Keyboard" Key="Key_Space">
 			<Modifier Device="Keyboard" Key="Key_LeftControl" />
 			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
@@ -1631,7 +1629,7 @@
 		<Inverted Value="0" />
 		<Deadzone Value="0.00000000" />
 	</HumanoidRotateAxis>
-	<HumanoidRotateSensitivity Value="1.00000000" />
+	<HumanoidRotateSensitivity Value="0.28749999" />
 	<HumanoidRotateLeftButton>
 		<Primary Device="Keyboard" Key="Key_A" />
 		<Secondary Device="{NoDevice}" Key="" />
@@ -1655,7 +1653,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidPitchDownButton>
 	<HumanoidSprintButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Q" />
 		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</HumanoidSprintButton>
@@ -1665,12 +1663,12 @@
 		<ToggleOn Value="0" />
 	</HumanoidWalkButton>
 	<HumanoidCrouchButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_E" />
 		<Secondary Device="{NoDevice}" Key="" />
-		<ToggleOn Value="0" />
+		<ToggleOn Value="1" />
 	</HumanoidCrouchButton>
 	<HumanoidJumpButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_FaceDown" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidJumpButton>
 	<HumanoidPrimaryInteractButton>
@@ -1678,7 +1676,7 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidPrimaryInteractButton>
 	<HumanoidSecondaryInteractButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_FaceRight" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSecondaryInteractButton>
 	<HumanoidItemWheelButton>
@@ -1691,11 +1689,11 @@
 		<Deadzone Value="0.00000000" />
 	</HumanoidItemWheelButton_XAxis>
 	<HumanoidItemWheelButton_XLeft>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadLeft" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidItemWheelButton_XLeft>
 	<HumanoidItemWheelButton_XRight>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadRight" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidItemWheelButton_XRight>
 	<HumanoidItemWheelButton_YAxis>
@@ -1704,17 +1702,17 @@
 		<Deadzone Value="0.00000000" />
 	</HumanoidItemWheelButton_YAxis>
 	<HumanoidItemWheelButton_YUp>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadUp" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidItemWheelButton_YUp>
 	<HumanoidItemWheelButton_YDown>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadDown" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidItemWheelButton_YDown>
-	<HumanoidItemWheel_AcceptMouseInput Value="0" />
+	<HumanoidItemWheel_AcceptMouseInput Value="1" />
 	<HumanoidPrimaryFireButton>
-		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="Pos_GamePad_RTrigger" />
+		<Secondary Device="Mouse" Key="Mouse_1" />
 	</HumanoidPrimaryFireButton>
 	<HumanoidZoomButton>
 		<Primary Device="{NoDevice}" Key="" />
@@ -1722,19 +1720,21 @@
 		<ToggleOn Value="0" />
 	</HumanoidZoomButton>
 	<HumanoidThrowGrenadeButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_LBumper" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidThrowGrenadeButton>
 	<HumanoidMeleeButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_RBumper" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidMeleeButton>
 	<HumanoidReloadButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="Pos_GamePad_LTrigger" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidReloadButton>
 	<HumanoidSwitchWeapon>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadRight">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceUp" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSwitchWeapon>
 	<HumanoidSelectPrimaryWeaponButton>
@@ -1746,19 +1746,25 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectSecondaryWeaponButton>
 	<HumanoidSelectUtilityWeaponButton>
-		<Primary Device="{NoDevice}" Key="" />
-		<Secondary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadRight">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceRight" />
+		</Primary>
+		<Secondary Device="Keyboard" Key="Key_PageDown" />
 	</HumanoidSelectUtilityWeaponButton>
 	<HumanoidSelectNextWeaponButton>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectNextWeaponButton>
 	<HumanoidSelectPreviousWeaponButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadLeft">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceUp" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectPreviousWeaponButton>
 	<HumanoidHideWeaponButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadDown">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceUp" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidHideWeaponButton>
 	<HumanoidSelectNextGrenadeTypeButton>
@@ -1770,11 +1776,15 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSelectPreviousGrenadeTypeButton>
 	<HumanoidToggleFlashlightButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadLeft">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidToggleFlashlightButton>
 	<HumanoidToggleNightVisionButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadRight">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidToggleNightVisionButton>
 	<HumanoidToggleShieldsButton>
@@ -1814,15 +1824,19 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSwitchToCompAnalyser>
 	<HumanoidSwitchToSuitTool>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_RBumper">
+			<Modifier Device="28DE11FF" Key="GamePad_LBumper" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidSwitchToSuitTool>
 	<HumanoidToggleToolModeButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadUp">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceRight" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidToggleToolModeButton>
 	<HumanoidToggleMissionHelpPanelButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_F1" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidToggleMissionHelpPanelButton>
 	<GalaxyMapOpen_Humanoid>
@@ -1834,22 +1848,26 @@
 		<Secondary Device="{NoDevice}" Key="" />
 	</SystemMapOpen_Humanoid>
 	<FocusCommsPanel_Humanoid>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadUp">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceLeft" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</FocusCommsPanel_Humanoid>
 	<QuickCommsPanel_Humanoid>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Enter" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</QuickCommsPanel_Humanoid>
 	<HumanoidOpenAccessPanelButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="28DE11FF" Key="GamePad_DPadLeft">
+			<Modifier Device="28DE11FF" Key="GamePad_FaceLeft" />
+		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidOpenAccessPanelButton>
 	<HumanoidConflictContextualUIButton>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</HumanoidConflictContextualUIButton>
-	<EnableMenuGroupsOnFoot Value="0" />
+	<EnableMenuGroupsOnFoot Value="1" />
 	<StoreEnableRotation>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />

@@ -590,14 +590,18 @@
 	<RightPanelFocusOptions Value="FocusOption_Nothing" />
 	<EnableCameraLockOn Value="1" />
 	<GalaxyMapOpen>
+		<Primary Device="28DE11FF" Key="GamePad_Back" />
+		<Secondary Device="Keyboard" Key="Key_M">
+			<Modifier Device="Keyboard" Key="Key_LeftControl" />
+		</Secondary>
+	</GalaxyMapOpen>
+	<SystemMapOpen>
 		<Primary Device="28DE11FF" Key="GamePad_Back">
 			<Modifier Device="28DE11FF" Key="GamePad_FaceDown" />
 		</Primary>
-		<Secondary Device="Keyboard" Key="Key_F9" />
-	</GalaxyMapOpen>
-	<SystemMapOpen>
-		<Primary Device="28DE11FF" Key="GamePad_Back" />
-		<Secondary Device="Keyboard" Key="Key_F11" />
+		<Secondary Device="Keyboard" Key="Key_M">
+			<Modifier Device="Keyboard" Key="Key_LeftAlt" />
+		</Secondary>
 	</SystemMapOpen>
 	<ShowPGScoreSummaryInput>
 		<Primary Device="{NoDevice}" Key="" />
