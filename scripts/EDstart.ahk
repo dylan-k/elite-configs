@@ -68,25 +68,49 @@ Send {LWinDown}{d}{LWinUp}}
 ; Apps with the longest startup are listed first.
 
 ; EDMC EDMarketConnector
+Process, Exist, EDMarketConnector.exe
+If Not ErrorLevel {
 Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
+}
 
 ; EDD Elite Discovery
+Process, Exist, EDDiscovery.exe
+If Not ErrorLevel {
 Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
+}
 
 ; VoiceAttack
+Process, Exist, VoiceAttack.exe
+If Not ErrorLevel {
 Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
+}
 
 ; EDO Elite Observatory
+Process, Exist, Observatory.exe,
+If Not ErrorLevel {
 Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
+}
 
 ; Elite Dangerous Journal Processor
+Process, Exist, EliteDangerousJournalProcessor.exe,
+If Not ErrorLevel {
 Run, M:\Games\Elite Dangerous\EDJP\EliteDangerousJournalProcessor.exe, M:\Games\Elite Dangerous\EDJP\
+}
+
+; EliteG19s
+Process, Exist, EliteG19s.Windows.exe,
+If Not ErrorLevel {
+Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
+}
+
+; Discord
+Process, Exist, Discord.exe,
+If Not ErrorLevel {
+Run, C:\Users\Dylan\AppData\Local\Discord\app-1.0.9002\Discord.exe, C:\Users\Dylan\AppData\Local\Discord\app-1.0.9002\
+}
 
 ; StatusDisplay
 ; Run, M:\Games\Elite Dangerous\Status Display\StatusDisplay.exe, M:\Games\Elite Dangerous\Status Display\
-
-; EliteG19s
-; Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
 
 ; FirstContact
 ; Run, C:\Program Files (x86)\Sidsoft\FirstContact\FirstContact.exe, C:\Program Files (x86)\Sidsoft\FirstContact
@@ -102,6 +126,10 @@ Run, M:\Games\Elite Dangerous\EDJP\EliteDangerousJournalProcessor.exe, M:\Games\
 
 ; EDDI: normally runs inside of voiceattack, so it's disabled here
 ; "C:\Program Files (x86)\VoiceAttack\Apps\EDDI\EDDI.exe"
+
+; ok now open some web apps
+run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe https://www.spansh.co.uk/exact-plotter https://eddb.io/trade/loops https://inara.cz/search-nearest/
+
 
 ; Minimize Everything ---------------------------------------------------------
 Send {LWinDown}{d}{LWinUp}}
@@ -121,8 +149,7 @@ run, steam://rungameid/359320
 ;; better check the manual
 ; Run, M:\Games\Elite Dangerous\Cougar Display\MFDCougar.exe
 
-; ok now open some web apps
-run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe --new-window https://eddb.io/trade/single https://eddb.io/trade/loops
+
 
 
 ; Cleanup ----------------------------------------------------------------------
