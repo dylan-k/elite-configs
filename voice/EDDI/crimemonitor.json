@@ -1,62 +1,11 @@
 ﻿{
-  "criminalrecord": [
-    {
-      "faction": "8th Dragon Squadron",
-      "allegiance": "Independent",
-      "system": "Lodhary",
-      "station": "KNK-94H",
-      "claims": 0,
-      "fines": 0,
-      "bounties": 200,
-      "factionSystems": [
-        "Lodhary",
-        "Patocuda",
-        "Saontiana",
-        "Sadhen",
-        "HIP 111657",
-        "Gliese 1272",
-        "Deive",
-        "Kalufon",
-        "HIP 113699",
-        "Harma",
-        "Parhua",
-        "Kolabinates",
-        "Chnoumis",
-        "Biko"
-      ],
-      "interstellarBountyFactions": [],
-      "factionReports": [
-        {
-          "timestamp": "2021-08-22T19:18:23Z",
-          "bounty": true,
-          "crimeEDName": "assault",
-          "system": "Lodhary",
-          "station": null,
-          "body": "Lodhary 1",
-          "victim": "$mega_commsarray_name;",
-          "victimAllegiance": "None",
-          "amount": 100
-        },
-        {
-          "timestamp": "2021-08-22T19:50:20Z",
-          "bounty": true,
-          "crimeEDName": "assault",
-          "system": "Lodhary",
-          "station": null,
-          "body": "Lodhary 1",
-          "victim": "$mega_commsarray_name;",
-          "victimAllegiance": "None",
-          "amount": 100
-        }
-      ]
-    }
-  ],
+  "criminalrecord": [],
   "homeSystems": {},
   "claims": 0,
   "fines": 0,
-  "bounties": 200,
+  "bounties": 0,
   "maxStationDistanceFromStarLs": 10000,
   "prioritizeOrbitalStations": false,
-  "targetSystem": "Wasat",
-  "updatedat": "2021-08-22T23:05:46Z"
+  "targetSystem": "Kuwembaa",
+  "updatedat": "2021-09-06T23:10:52Z"
 }

@@ -1,7 +1,7 @@
 ﻿{
-  "standardVoice": "Microsoft Zira",
-  "volume": 24,
-  "effectsLevel": 48,
+  "standardVoice": "Microsoft David",
+  "volume": 64,
+  "effectsLevel": 0,
   "distortOnDamage": true,
   "rate": 1,
   "disableipa": false,

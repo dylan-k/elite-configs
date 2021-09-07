@@ -16,7 +16,7 @@
     },
     {
       "edname": "adaptiveencryptors",
-      "amount": 9,
+      "amount": 15,
       "minimum": null,
       "desired": null,
       "maximum": 100
@@ -128,14 +128,14 @@
     },
     {
       "edname": "chromium",
-      "amount": 1,
+      "amount": 7,
       "minimum": null,
       "desired": null,
       "maximum": 250
     },
     {
       "edname": "scandatabanks",
-      "amount": 45,
+      "amount": 51,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -457,7 +457,7 @@
     },
     {
       "edname": "manganese",
-      "amount": 0,
+      "amount": 12,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -471,7 +471,7 @@
     },
     {
       "edname": "mechanicalequipment",
-      "amount": 30,
+      "amount": 33,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -583,7 +583,7 @@
     },
     {
       "edname": "shieldfrequencydata",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 100
@@ -681,7 +681,7 @@
     },
     {
       "edname": "salvagedalloys",
-      "amount": 8,
+      "amount": 11,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -891,7 +891,7 @@
     },
     {
       "edname": "tungsten",
-      "amount": 0,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 200
@@ -919,14 +919,14 @@
     },
     {
       "edname": "encryptedfiles",
-      "amount": 30,
+      "amount": 33,
       "minimum": null,
       "desired": null,
       "maximum": 300
     },
     {
       "edname": "vanadium",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 250
@@ -947,7 +947,7 @@
     },
     {
       "edname": "zinc",
-      "amount": 4,
+      "amount": 13,
       "minimum": null,
       "desired": null,
       "maximum": 250
