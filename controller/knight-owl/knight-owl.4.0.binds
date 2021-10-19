@@ -656,7 +656,7 @@
 	</UI_Right>
 	<UI_Select>
 		<Primary Device="28DE11FF" Key="GamePad_FaceDown" />
-		<Secondary Device="Keyboard" Key="Key_Enter" />
+		<Secondary Device="Keyboard" Key="Key_Space" />
 	</UI_Select>
 	<UI_Back>
 		<Primary Device="28DE11FF" Key="GamePad_FaceRight" />
@@ -850,11 +850,11 @@
 		<Deadzone Value="0.00000000" />
 	</BuggyRollAxisRaw>
 	<BuggyRollLeftButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_A" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyRollLeftButton>
 	<BuggyRollRightButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_D" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyRollRightButton>
 	<BuggyPitchAxis>
@@ -863,17 +863,17 @@
 		<Deadzone Value="0.00000000" />
 	</BuggyPitchAxis>
 	<BuggyPitchUpButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_F" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyPitchUpButton>
 	<BuggyPitchDownButton>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_R" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</BuggyPitchDownButton>
 	<VerticalThrustersButton>
 		<Primary Device="28DE11FF" Key="GamePad_FaceRight" />
 		<Secondary Device="{NoDevice}" Key="" />
-		<ToggleOn Value="0" />
+		<ToggleOn Value="1" />
 	</VerticalThrustersButton>
 	<BuggyPrimaryFireButton>
 		<Primary Device="28DE11FF" Key="GamePad_RBumper" />
@@ -885,7 +885,7 @@
 	</BuggySecondaryFireButton>
 	<AutoBreakBuggyButton>
 		<Primary Device="28DE11FF" Key="GamePad_FaceDown" />
-		<Secondary Device="Keyboard" Key="Key_F" />
+		<Secondary Device="Keyboard" Key="Key_X" />
 		<ToggleOn Value="1" />
 	</AutoBreakBuggyButton>
 	<HeadlightsBuggyButton>
@@ -1682,6 +1682,7 @@
 	<HumanoidItemWheelButton>
 		<Primary Device="{NoDevice}" Key="" />
 		<Secondary Device="{NoDevice}" Key="" />
+		<ToggleOn Value="0" />
 	</HumanoidItemWheelButton>
 	<HumanoidItemWheelButton_XAxis>
 		<Binding Device="{NoDevice}" Key="" />
@@ -1869,7 +1870,7 @@
 	</HumanoidConflictContextualUIButton>
 	<EnableMenuGroupsOnFoot Value="1" />
 	<StoreEnableRotation>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Numpad_Divide" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</StoreEnableRotation>
 	<StorePitchCamera>
@@ -1883,15 +1884,15 @@
 		<Deadzone Value="0.00000000" />
 	</StoreYawCamera>
 	<StoreCamZoomIn>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Numpad_Add" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</StoreCamZoomIn>
 	<StoreCamZoomOut>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Numpad_Subtract" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</StoreCamZoomOut>
 	<StoreToggle>
-		<Primary Device="{NoDevice}" Key="" />
+		<Primary Device="Keyboard" Key="Key_Numpad_Decimal" />
 		<Secondary Device="{NoDevice}" Key="" />
 	</StoreToggle>
 </Root>
