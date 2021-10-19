@@ -18,6 +18,7 @@ Menu, Tray, Icon, %I_Icon%
 
 #UseHook
 ;========================= Start Auto-Execution Section ========================
+
 ; Always run as admin
 if not A_IsAdmin
 {
@@ -57,6 +58,8 @@ DetectHiddenWindows, On
 GroupAdd, saveReload, %A_ScriptName%
 
 
+
+
 ; Main Script 
 ; =============================================================================
 
@@ -66,12 +69,6 @@ Send {LWinDown}{d}{LWinUp}}
 ; Launchers -------------------------------------------------------------------
 ; Run programS. Note that most programs will require a FULL file path.
 ; Apps with the longest startup are listed first.
-
-; EDMC EDMarketConnector
-Process, Exist, EDMarketConnector.exe
-If Not ErrorLevel {
-Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
-}
 
 ; EDD Elite Discovery
 Process, Exist, EDDiscovery.exe
@@ -85,10 +82,29 @@ If Not ErrorLevel {
 Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
 }
 
-; EDO Elite Observatory
-Process, Exist, Observatory.exe,
+; EDMC EDMarketConnector
+Process, Exist, EDMarketConnector.exe
 If Not ErrorLevel {
-Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
+Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
+}
+
+; Elite Dangerous Engineer
+; this app is weird and must be run from its funny kind of shortcut
+Process, Exist, EDEngineer.exe
+If Not ErrorLevel {
+Run, "C:\Users\Dylan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Games\Elite Dangerous Engineer.appref-ms"
+}
+
+; EDO Elite Observatory
+; Process, Exist, Observatory.exe,
+; If Not ErrorLevel {
+; Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
+; }
+
+; EDO Elite Observatory
+Process, Exist, ObservatoryCore.exe,
+If Not ErrorLevel {
+Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
 }
 
 ; Elite Dangerous Journal Processor
@@ -106,7 +122,7 @@ Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USER
 ; Discord
 Process, Exist, Discord.exe,
 If Not ErrorLevel {
-Run, C:\Users\Dylan\AppData\Local\Discord\app-1.0.9002\Discord.exe, C:\Users\Dylan\AppData\Local\Discord\app-1.0.9002\
+Run, C:\Users\Dylan\AppData\Local\Discord\Update.exe --processStart Discord.exe
 }
 
 ; StatusDisplay
@@ -128,7 +144,7 @@ Run, C:\Users\Dylan\AppData\Local\Discord\app-1.0.9002\Discord.exe, C:\Users\Dyl
 ; "C:\Program Files (x86)\VoiceAttack\Apps\EDDI\EDDI.exe"
 
 ; ok now open some web apps
-run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe https://www.spansh.co.uk/exact-plotter https://eddb.io/trade/loops https://inara.cz/search-nearest/
+run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe https://www.spansh.co.uk/exact-plotter https://eddb.io/trade/loops https://inara.cz/search-nearest/ https://s.orbis.zone/gpj5 https://www.reddit.com/r/EliteDangerous/comments/ggffqq/ https://www.reddit.com/r/EliteDangerous/comments/merpky
 
 
 ; Minimize Everything ---------------------------------------------------------
@@ -139,6 +155,20 @@ Send {LWinDown}{d}{LWinUp}}
 ; Steam launches the default way if min-ed-launcher is not installed
 ; see also https://github.com/Rfvgyhn/min-ed-launcher
 ; Elite Dangerous Scout
+
+
+
+
+
+; Steam
+Process, Exist, steam.exe,
+If Not ErrorLevel {
+Run, C:\Program Files (x86)\Steam\steam.exe 
+}
+
+Process, Wait, steam.exe ; make sure steam is online before proceeding
+Sleep 20000 ; give steam some time to get online
+
 Run, C:\Program Files (x86)\Steam\steam.exe -bigpicture, C:\Program Files (x86)\Steam
 WinWait, ahk_exe steam.exe
 run, steam://rungameid/359320
@@ -154,38 +184,37 @@ run, steam://rungameid/359320
 
 ; Cleanup ----------------------------------------------------------------------
 
+
 ; Close launcher after launch
 ; note: min-ed-launcher also checks to close launcher when game exits
-Loop
-{
-  WinWait, ahk_exe EliteDangerous64.exe
-  ;WinWaitClose, ahk_exe EliteDangerous64.exe
-}
+Process, Wait, EliteDangerous64.exe
+Process, Close, cmd.exe
+;Process, Close, launcher.exe
 
-; Close apps after game exit
-Loop
-{
-  WinWait, ahk_exe EliteDangerous64.exe
-  WinWaitClose, ahk_exe EliteDangerous64.exe
-    Process, Close, EDDI.exe
-    Process, Close, EDDiscovery.exe
-    Process, Close, EDMarketConnector.exe
-    Process, Close, EDScout.exe
-    Process, Close, EliteG19s.Windows.exe
-    Process, Close, FirstContact.exe
-    Process, Close, MFDCougar.exe
-    Process, Close, Observatory.exe 
-    Process, Close, toolbox.exe
-    Process, Close, VoiceAttack.exe
-    Process, Close, EliteDangerousJournalProcessor.exe
-}
+; Close companions after exit
+Process, WaitClose, EliteDangerous64.exe
+Process, Close, Discord.exe
+Process, Close, EDDI.exe
+Process, Close, EDDiscovery.exe
+Process, Close, EDMarketConnector.exe
+Process, Close, EDScout.exe
+Process, Close, EliteG19s.Windows.exe
+Process, Close, FirstContact.exe
+Process, Close, MFDCougar.exe
+Process, Close, Observatory.exe 
+Process, Close, toolbox.exe
+Process, Close, VoiceAttack.exe
+Process, Close, EliteDangerousJournalProcessor.exe
+Process, Close, steam.exe
+Process, Close, EDEngineer.exe
+Process, Close, ObservatoryCore.exe
+; Minimize Everything 
+Send {LWinDown}{d}{LWinUp}}
+Tray_Refresh()
+ExitApp
 
-; Always on Top ----------------------------------------------------------------
-; stick” any window to  foreground of desktop with a simple keyboard shortcut.
-; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
-; to use it, while this script is running, click a window, then do control+space
-; control+space again will un-stick the window.
- ^SPACE::  Winset, Alwaysontop, , A
+
+
 
 
 
@@ -194,6 +223,63 @@ return
 ; ==============================================================================
 
 
+
+
+; FUNCTIONS
+; ==============================================================================
+
+
+; Always on Top 
+; ------------------------------------------------------------------------------
+; stick” any window to  foreground of desktop with a simple keyboard shortcut.
+; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
+; to use it, while this script is running, click a window, then do control+space
+; control+space again will un-stick the window.
+ ^SPACE::  Winset, Alwaysontop, , A
+
+
+; TRAY REFRESH
+; ------------------------------------------------------------------------------
+Tray_Refresh() {
+/*    Remove any dead icon from the tray menu
+ *    Should work both for W7 & W10
+ */
+  WM_MOUSEMOVE := 0x200
+  detectHiddenWin := A_DetectHiddenWindows
+  DetectHiddenWindows, On
+
+  allTitles := ["ahk_class Shell_TrayWnd"
+      , "ahk_class NotifyIconOverflowWindow"]
+  allControls := ["ToolbarWindow321"
+        ,"ToolbarWindow322"
+        ,"ToolbarWindow323"
+        ,"ToolbarWindow324"]
+  allIconSizes := [24,32]
+
+  for id, title in allTitles {
+    for id, controlName in allControls
+    {
+      for id, iconSize in allIconSizes
+      {
+        ControlGetPos, xTray,yTray,wdTray,htTray,% controlName,% title
+        y := htTray - 10
+        While (y > 0)
+        {
+          x := wdTray - iconSize/2
+          While (x > 0)
+          {
+            point := (y << 16) + x
+            PostMessage,% WM_MOUSEMOVE, 0,% point,% controlName,% title
+            x -= iconSize/2
+          }
+          y -= iconSize/2
+        }
+      }
+    }
+  }
+
+  DetectHiddenWindows, %detectHiddenWin%
+}
 
 
 ; Save Reload / Quick Stop
