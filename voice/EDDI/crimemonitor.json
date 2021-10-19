@@ -1,11 +1,44 @@
 ﻿{
-  "criminalrecord": [],
+  "criminalrecord": [
+    {
+      "faction": "Workers of Krinda Future",
+      "allegiance": "Federation",
+      "system": "Krinda",
+      "station": "King Holdings",
+      "claims": 0,
+      "fines": 0,
+      "bounties": 600,
+      "factionSystems": [
+        "Machadan",
+        "Parinta",
+        "Pegasi Sector BL-X c1-25",
+        "Wathlanukh",
+        "Krinda",
+        "Kaititja",
+        "Kongi"
+      ],
+      "interstellarBountyFactions": [],
+      "factionReports": [
+        {
+          "timestamp": "2021-10-18T00:39:24Z",
+          "bounty": true,
+          "crimeEDName": "dockingMajorTresspass",
+          "system": "Machadan",
+          "station": null,
+          "body": null,
+          "victim": "$poi_datalink_name;",
+          "victimAllegiance": "None",
+          "amount": 600
+        }
+      ]
+    }
+  ],
   "homeSystems": {},
   "claims": 0,
   "fines": 0,
-  "bounties": 0,
+  "bounties": 600,
   "maxStationDistanceFromStarLs": 10000,
   "prioritizeOrbitalStations": false,
-  "targetSystem": "Kuwembaa",
-  "updatedat": "2021-09-06T23:10:52Z"
+  "targetSystem": "Nuekuae MK-B c2-227",
+  "updatedat": "2021-10-19T23:30:25Z"
 }
