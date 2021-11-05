@@ -86,14 +86,14 @@
     },
     {
       "edname": "cadmium",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
       "maximum": 200
     },
     {
       "edname": "carbon",
-      "amount": 31,
+      "amount": 34,
       "minimum": null,
       "desired": null,
       "maximum": 300
@@ -737,7 +737,7 @@
     },
     {
       "edname": "sulphur",
-      "amount": 27,
+      "amount": 33,
       "minimum": null,
       "desired": null,
       "maximum": 300
