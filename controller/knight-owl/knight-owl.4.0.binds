@@ -11,7 +11,7 @@
 		</Primary>
 		<Secondary Device="{NoDevice}" Key="" />
 	</MouseReset>
-	<MouseSensitivity Value="0.29508090" />
+	<MouseSensitivity Value="0.10000000" />
 	<MouseDecayRate Value="1.00000000" />
 	<MouseDeadzone Value="0.00250000" />
 	<MouseLinearity Value="1.06550002" />
@@ -1551,7 +1551,7 @@
 	<SAAThirdPersonMouseXDecay Value="1" />
 	<SAAThirdPersonMouseYMode Value="Bindings_MousePitch" />
 	<SAAThirdPersonMouseYDecay Value="1" />
-	<SAAThirdPersonMouseSensitivity Value="10.04502487" />
+	<SAAThirdPersonMouseSensitivity Value="13.36836338" />
 	<SAAThirdPersonYawAxisRaw>
 		<Binding Device="28DE11FF" Key="GamePad_RStickX" />
 		<Inverted Value="0" />
