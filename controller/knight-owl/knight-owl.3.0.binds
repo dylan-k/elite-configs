@@ -610,7 +610,7 @@
 	</ShowPGScoreSummaryInput>
 	<HeadLookToggle>
 		<Primary Device="28DE11FF" Key="GamePad_RThumb" />
-		<Secondary Device="Keyboard" Key="Key_ScrollLock" />
+		<Secondary Device="Mouse" Key="Mouse_3" />
 		<ToggleOn Value="1" />
 	</HeadLookToggle>
 	<Pause>
@@ -1564,7 +1564,7 @@
 	</ExplorationFSSShowHelp>
 	<ExplorationSAAChangeScannedAreaViewToggle>
 		<Primary Device="28DE11FF" Key="GamePad_LBumper" />
-		<Secondary Device="Mouse" Key="Mouse_3" />
+		<Secondary Device="{NoDevice}" Key="" />
 		<ToggleOn Value="0" />
 	</ExplorationSAAChangeScannedAreaViewToggle>
 	<ExplorationSAAExitThirdPerson>
