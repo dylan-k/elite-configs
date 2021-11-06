@@ -63,8 +63,18 @@ GroupAdd, saveReload, %A_ScriptName%
 ; Main Script 
 ; =============================================================================
 
+; Steam
+Process, Exist, steam.exe,
+If Not ErrorLevel {
+Run, C:\Program Files (x86)\Steam\steam.exe 
+}
+
+Process, Wait, steam.exe ; make sure steam is online before proceeding
+
 ; hide all the things
 Send {LWinDown}{d}{LWinUp}}
+
+Sleep 20000 ; give steam some time to get online
 
 ; Launchers -------------------------------------------------------------------
 ; Run programS. Note that most programs will require a FULL file path.
@@ -90,22 +100,22 @@ Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program 
 
 ; Elite Dangerous Engineer
 ; this app is weird and must be run from its funny kind of shortcut
-Process, Exist, EDEngineer.exe
-If Not ErrorLevel {
-Run, "C:\Users\Dylan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Games\Elite Dangerous Engineer.appref-ms"
-}
-
-; EDO Elite Observatory
-; Process, Exist, Observatory.exe,
+; Process, Exist, EDEngineer.exe
 ; If Not ErrorLevel {
-; Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
+; Run, "C:\Users\Dylan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Games\Elite Dangerous Engineer.appref-ms"
 ; }
 
 ; EDO Elite Observatory
-Process, Exist, ObservatoryCore.exe,
+Process, Exist, Observatory.exe,
 If Not ErrorLevel {
-Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
+Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 }
+
+; EDO Elite Observatory v2
+; Process, Exist, ObservatoryCore.exe,
+; If Not ErrorLevel {
+; Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
+; }
 
 ; Elite Dangerous Journal Processor
 Process, Exist, EliteDangerousJournalProcessor.exe,
@@ -156,18 +166,6 @@ Send {LWinDown}{d}{LWinUp}}
 ; see also https://github.com/Rfvgyhn/min-ed-launcher
 ; Elite Dangerous Scout
 
-
-
-
-
-; Steam
-Process, Exist, steam.exe,
-If Not ErrorLevel {
-Run, C:\Program Files (x86)\Steam\steam.exe 
-}
-
-Process, Wait, steam.exe ; make sure steam is online before proceeding
-Sleep 20000 ; give steam some time to get online
 
 Run, C:\Program Files (x86)\Steam\steam.exe -bigpicture, C:\Program Files (x86)\Steam
 WinWait, ahk_exe steam.exe
