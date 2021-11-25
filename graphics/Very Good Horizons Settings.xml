@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?> 
+<Profile Name = "EDProfile"> 
+    <Name>Very Good Horizons Settings</Name>
+    <ScreenWidth>2560</ScreenWidth>
+    <ScreenHeight>1440</ScreenHeight>
+    <VSync>False</VSync>
+    <FullScreen>2</FullScreen>
+    <Monitor>0</Monitor>
+    <LimitFrameRate>False</LimitFrameRate>
+    <MaxFramesPerSecond>30</MaxFramesPerSecond>
+    <StereoscopicMode>0</StereoscopicMode>
+    <FOV>60.0000</FOV>
+    <HumanoidFOV>56.249001</HumanoidFOV>
+    <GammaOffset>-0.2000</GammaOffset>
+    <ShaderWarming>True</ShaderWarming>
+    <BlurEnabled>False</BlurEnabled>
+    <AOQuality>2</AOQuality>
+    <SurfaceSamplerQuality>2</SurfaceSamplerQuality>
+    <DOFEnabled>1</DOFEnabled>
+    <BloomQuality>1</BloomQuality>
+    <EnvmapQuality>1</EnvmapQuality>
+    <MaterialQuality>1</MaterialQuality>
+    <EnvironmentQuality>2</EnvironmentQuality>
+    <FXQuality>2</FXQuality>
+    <GalaxyMapQuality>1</GalaxyMapQuality>
+    <TerrainQuality>2</TerrainQuality>
+    <SurfaceMaterialQuality>2</SurfaceMaterialQuality>
+    <ShadowQuality>3</ShadowQuality>
+    <TextureQualityEx>2</TextureQualityEx>
+    <AAMode>1</AAMode>
+    <TextureFilterQuality>3</TextureFilterQuality>    
+    <HMDRenderTargetMultiplier>1.0000</HMDRenderTargetMultiplier>
+    <SSAAMultiplier>1.0000</SSAAMultiplier>
+    <GpuSchedulerMultiplier>0.0000</GpuSchedulerMultiplier>
+    <GUI>Standard</GUI>
+    <Binding>Empty</Binding>
+    <BindingsEnabled>False</BindingsEnabled>
+    <LODDistanceScale>0.91</LODDistanceScale>
+    <JetCones>2</JetCones>
+    <DX11_RefreshRateNumerator>50</DX11_RefreshRateNumerator>
+    <VehicleMaintainHorizonCamera>True</VehicleMaintainHorizonCamera>
+    <VehicleMotionBlackout>False</VehicleMotionBlackout>
+    <DisableCameraShake>True</DisableCameraShake>
+    <DashboardGUIBrightness>0.1000</DashboardGUIBrightness>
+    <Custom_Files></Custom_Files>
+    <Custom_Files_Checked>False</Custom_Files_Checked>
+    <TerrainLodBlendingQuality>1</TerrainLodBlendingQuality>
+    <VolumetricsQuality>2</VolumetricsQuality>
+    <ToneMapProfile>A D's Tone Map</ToneMapProfile>
+    <ToneMapSavingEnabled>False</ToneMapSavingEnabled>
+    <ExtraSettingsChecked>False</ExtraSettingsChecked>
+    <OdysseyChecked>False</OdysseyChecked>
+</Profile>

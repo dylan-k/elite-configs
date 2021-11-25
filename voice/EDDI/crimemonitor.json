@@ -1,44 +1,39 @@
 ﻿{
   "criminalrecord": [
     {
-      "faction": "Workers of Krinda Future",
+      "faction": "G 139-3 Vision & Co",
       "allegiance": "Federation",
-      "system": "Krinda",
-      "station": "King Holdings",
+      "system": "G 139-3",
+      "station": "HNX-2KQ",
       "claims": 0,
-      "fines": 0,
-      "bounties": 600,
+      "fines": 400,
+      "bounties": 0,
       "factionSystems": [
-        "Machadan",
-        "Parinta",
-        "Pegasi Sector BL-X c1-25",
-        "Wathlanukh",
-        "Krinda",
-        "Kaititja",
-        "Kongi"
+        "G 139-3",
+        "Wolf 1509"
       ],
       "interstellarBountyFactions": [],
       "factionReports": [
         {
-          "timestamp": "2021-10-18T00:39:24Z",
-          "bounty": true,
-          "crimeEDName": "dockingMajorTresspass",
-          "system": "Machadan",
-          "station": null,
+          "timestamp": "2021-11-24T08:24:40Z",
+          "bounty": false,
+          "crimeEDName": "dockingMinorTresspass",
+          "system": "G 139-3",
+          "station": "O'Connor Dock",
           "body": null,
-          "victim": "$poi_datalink_name;",
-          "victimAllegiance": "None",
-          "amount": 600
+          "victim": null,
+          "victimAllegiance": null,
+          "amount": 400
         }
       ]
     }
   ],
   "homeSystems": {},
   "claims": 0,
-  "fines": 0,
-  "bounties": 600,
+  "fines": 400,
+  "bounties": 0,
   "maxStationDistanceFromStarLs": 10000,
   "prioritizeOrbitalStations": false,
-  "targetSystem": "Dumbooe ZA-F d11-5930",
-  "updatedat": "2021-11-05T00:25:48Z"
+  "targetSystem": "HIP 43670",
+  "updatedat": "2021-11-24T23:23:00Z"
 }
