@@ -9,8 +9,8 @@ Definately a work in progress, built for Odyssey's v4.0 bindings. My goal's to m
 SETUP
 --------------------------------------------------------------------------------
 
-1. Copy or hardlink the `.vdf` file to `<steam folder>/userdata/<your user number>/241100/remote/controller_config/<steam app id>/2427073884_controller_config.vdf`
-(Or use `steam://controllerconfig/xxx/yyy`)
+1. Copy or hardlink the `.vdf` file to `"C:\Program Files (x86)\Steam\userdata\299579286\241100\remote\2427073884_controller_config.vdf"`
+
 2. Copy the `.4.0.binds` file to the Elite Dangerous folder at `%localappdata%\Frontier Developments\Elite Dangerous\Options\Bindings`
 
 
