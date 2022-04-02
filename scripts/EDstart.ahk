@@ -60,13 +60,13 @@ GroupAdd, saveReload, %A_ScriptName%
 
 
 
-; Main Script 
+; Main Script
 ; =============================================================================
 
 ; Steam
 Process, Exist, steam.exe,
 If Not ErrorLevel {
-Run, C:\Program Files (x86)\Steam\steam.exe 
+Run, C:\Program Files (x86)\Steam\steam.exe
 }
 
 Process, Wait, steam.exe ; make sure steam is online before proceeding
@@ -74,7 +74,7 @@ Process, Wait, steam.exe ; make sure steam is online before proceeding
 ; hide all the things
 Send {LWinDown}{d}{LWinUp}}
 
-Sleep 20000 ; give steam some time to get online
+
 
 ; Launchers -------------------------------------------------------------------
 ; Run programS. Note that most programs will require a FULL file path.
@@ -98,6 +98,12 @@ If Not ErrorLevel {
 Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
 }
 
+; ED CoPilot
+Process, Exist, LaunchEDCoPilot.exe
+If Not ErrorLevel {
+Run, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\LaunchEDCoPilot.exe, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\
+}
+
 ; Elite Dangerous Engineer
 ; this app is weird and must be run from its funny kind of shortcut
 ; Process, Exist, EDEngineer.exe
@@ -106,16 +112,16 @@ Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program 
 ; }
 
 ; EDO Elite Observatory
-Process, Exist, Observatory.exe,
-If Not ErrorLevel {
-Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
-}
-
-; EDO Elite Observatory v2
-; Process, Exist, ObservatoryCore.exe,
+; Process, Exist, Observatory.exe,
 ; If Not ErrorLevel {
-; Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
+; Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 ; }
+
+; EDO Elite Observatory CORE
+Process, Exist, ObservatoryCore.exe,
+If Not ErrorLevel {
+Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
+}
 
 ; Elite Dangerous Journal Processor
 Process, Exist, EliteDangerousJournalProcessor.exe,
@@ -166,12 +172,12 @@ Send {LWinDown}{d}{LWinUp}}
 ; see also https://github.com/Rfvgyhn/min-ed-launcher
 ; Elite Dangerous Scout
 
-
+Sleep 10000 ; give steam some time to get online
 Run, C:\Program Files (x86)\Steam\steam.exe -bigpicture, C:\Program Files (x86)\Steam
 WinWait, ahk_exe steam.exe
 run, steam://rungameid/359320
 
-;; only after the game is actually running 
+;; only after the game is actually running
 ;; then open and then start Cougar Display
 ;; I think you even have to be logged into Open or wherever
 ;; better check the manual
@@ -199,14 +205,16 @@ Process, Close, EDScout.exe
 Process, Close, EliteG19s.Windows.exe
 Process, Close, FirstContact.exe
 Process, Close, MFDCougar.exe
-Process, Close, Observatory.exe 
+Process, Close, Observatory.exe
 Process, Close, toolbox.exe
 Process, Close, VoiceAttack.exe
 Process, Close, EliteDangerousJournalProcessor.exe
 Process, Close, steam.exe
 Process, Close, EDEngineer.exe
 Process, Close, ObservatoryCore.exe
-; Minimize Everything 
+Process, Close, EDCoPilotGUI2.exe
+Process, Close, EDCoPilot.exe
+; Minimize Everything
 Send {LWinDown}{d}{LWinUp}}
 Tray_Refresh()
 ExitApp
@@ -217,7 +225,7 @@ ExitApp
 
 
 return
-; END OF MAIN SCRIPT 
+; END OF MAIN SCRIPT
 ; ==============================================================================
 
 
@@ -227,7 +235,7 @@ return
 ; ==============================================================================
 
 
-; Always on Top 
+; Always on Top
 ; ------------------------------------------------------------------------------
 ; stick” any window to  foreground of desktop with a simple keyboard shortcut.
 ; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
@@ -295,15 +303,15 @@ return
 
 ; Removes any popped up tray tips.
 RemoveTrayTip:
-  SetTimer, RemoveTrayTip, Off 
-  TrayTip 
-return 
+  SetTimer, RemoveTrayTip, Off
+  TrayTip
+return
 
 ; Hard exit that just closes the script
 ^Esc::
 ExitApp
 
-#UseHook 
+#UseHook
 #IfWinActive
 
 

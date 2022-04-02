@@ -60,7 +60,7 @@ GroupAdd, saveReload, %A_ScriptName%
 
 
 
-; Main Script 
+; Main Script
 ; =============================================================================
 
 
@@ -74,7 +74,6 @@ Process, Close, cmd.exe
 
 
 ; Close companions after exit
-Process, WaitClose, EliteDangerous64.exe
 Process, Close, Discord.exe
 Process, Close, EDDI.exe
 Process, Close, EDDiscovery.exe
@@ -83,14 +82,16 @@ Process, Close, EDScout.exe
 Process, Close, EliteG19s.Windows.exe
 Process, Close, FirstContact.exe
 Process, Close, MFDCougar.exe
-Process, Close, Observatory.exe 
+Process, Close, Observatory.exe
 Process, Close, toolbox.exe
 Process, Close, VoiceAttack.exe
 Process, Close, EliteDangerousJournalProcessor.exe
 Process, Close, steam.exe
 Process, Close, EDEngineer.exe
 Process, Close, ObservatoryCore.exe
-; Minimize Everything 
+Process, Close, EDCoPilotGUI2.exe
+Process, Close, EDCoPilot.exe
+; Minimize Everything
 Send {LWinDown}{d}{LWinUp}}
 Tray_Refresh()
 ExitApp
@@ -101,7 +102,7 @@ ExitApp
 
 
 return
-; END OF MAIN SCRIPT 
+; END OF MAIN SCRIPT
 ; ==============================================================================
 
 
@@ -111,7 +112,7 @@ return
 ; ==============================================================================
 
 
-; Always on Top 
+; Always on Top
 ; ------------------------------------------------------------------------------
 ; stick” any window to  foreground of desktop with a simple keyboard shortcut.
 ; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
@@ -179,15 +180,15 @@ return
 
 ; Removes any popped up tray tips.
 RemoveTrayTip:
-  SetTimer, RemoveTrayTip, Off 
-  TrayTip 
-return 
+  SetTimer, RemoveTrayTip, Off
+  TrayTip
+return
 
 ; Hard exit that just closes the script
 ^Esc::
 ExitApp
 
-#UseHook 
+#UseHook
 #IfWinActive
 
 
