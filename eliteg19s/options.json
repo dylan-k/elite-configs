@@ -27,7 +27,7 @@
         "UseWindow": "auto",
         "InitialScreen": "Camera",
         "SaveWindowsOnExit": true,
-        "DisplayMessages": "all",
+        "DisplayMessages": "primary",
         "DisplayEveryFrame": 1,
         "UseUniqueWindowTitle": false,
         "Windows": [
@@ -620,8 +620,12 @@
         "IsUseTextToSpeech": true,
         "ScreenTickers": [
             {
-                "Name": "Reddit",
+                "Name": "Elite Dangerous Reddit",
                 "Url": "http://www.reddit.com/r/EliteDangerous/new/.rss"
+            },
+            {
+              "Name": "Canonn",
+              "Url": "https://canonn.science/feed/"
             }
         ],
         "ArxTicker": "https://feeds.feedburner.com/GalnetNews?format=xml"

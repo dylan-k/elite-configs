@@ -12,9 +12,8 @@
 
 I_Icon = elite.ico
 IfExist, %I_Icon%
-Menu, Tray, Icon, %I_Icon%
+  Menu, Tray, Icon, %I_Icon%
 ;return
-
 
 #UseHook
 ;========================= Start Auto-Execution Section ========================
@@ -22,8 +21,8 @@ Menu, Tray, Icon, %I_Icon%
 ; Always run as admin
 if not A_IsAdmin
 {
-   Run *RunAs "%A_ScriptFullPath%"  ; Requires v1.0.92.01+
-   ExitApp
+  Run *RunAs "%A_ScriptFullPath%" ; Requires v1.0.92.01+
+  ExitApp
 }
 
 ; Keeps script permanently running
@@ -57,16 +56,13 @@ DetectHiddenWindows, On
 
 GroupAdd, saveReload, %A_ScriptName%
 
-
-
-
 ; Main Script
 ; =============================================================================
 
 ; Steam
 Process, Exist, steam.exe,
 If Not ErrorLevel {
-Run, C:\Program Files (x86)\Steam\steam.exe
+  Run, C:\Program Files (x86)\Steam\steam.exe
 }
 
 Process, Wait, steam.exe ; make sure steam is online before proceeding
@@ -74,34 +70,32 @@ Process, Wait, steam.exe ; make sure steam is online before proceeding
 ; hide all the things
 Send {LWinDown}{d}{LWinUp}}
 
-
-
 ; Launchers -------------------------------------------------------------------
 ; Run programS. Note that most programs will require a FULL file path.
 ; Apps with the longest startup are listed first.
 
-; EDD Elite Discovery
-Process, Exist, EDDiscovery.exe
+; ; EDD Elite Discovery
+; Process, Exist, EDDiscovery.exe
+; If Not ErrorLevel {
+; Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
+; }
+
+; EDMC EDMarketConnector
+Process, Exist, EDMarketConnector.exe
 If Not ErrorLevel {
-Run, C:\Program Files\EDDiscovery\EDDiscovery.exe, C:\Program Files\EDDiscovery\
+  Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
 }
 
 ; VoiceAttack
 Process, Exist, VoiceAttack.exe
 If Not ErrorLevel {
-Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
-}
-
-; EDMC EDMarketConnector
-Process, Exist, EDMarketConnector.exe
-If Not ErrorLevel {
-Run, C:\Program Files (x86)\EDMarketConnector\EDMarketConnector.exe, C:\Program Files (x86)\EDMarketConnector\
+  Run, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\VoiceAttack.exe, C:\Program Files (x86)\Steam\steamapps\common\VoiceAttack\
 }
 
 ; ED CoPilot
 Process, Exist, LaunchEDCoPilot.exe
 If Not ErrorLevel {
-Run, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\LaunchEDCoPilot.exe, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\
+  Run, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\LaunchEDCoPilot.exe, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\
 }
 
 ; Elite Dangerous Engineer
@@ -111,34 +105,34 @@ Run, M:\Games\Elite Dangerous\Elite Dangerous CoPilot\LaunchEDCoPilot.exe, M:\Ga
 ; Run, "C:\Users\Dylan\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Games\Elite Dangerous Engineer.appref-ms"
 ; }
 
+; EDO Elite Observatory CORE
+Process, Exist, ObservatoryCore.exe,
+If Not ErrorLevel {
+  Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
+}
+
 ; EDO Elite Observatory
 ; Process, Exist, Observatory.exe,
 ; If Not ErrorLevel {
 ; Run, %USERPROFILE%\AppData\Local\Elite Observatory\Observatory.exe, %USERPROFILE%\AppData\Local\Elite Observatory\
 ; }
 
-; EDO Elite Observatory CORE
-Process, Exist, ObservatoryCore.exe,
-If Not ErrorLevel {
-Run, M:\Games\Elite Dangerous\Elite Observatory\ObservatoryCore.exe, M:\Games\Elite Dangerous\Elite Observatory\
-}
-
 ; Elite Dangerous Journal Processor
 Process, Exist, EliteDangerousJournalProcessor.exe,
 If Not ErrorLevel {
-Run, M:\Games\Elite Dangerous\EDJP\EliteDangerousJournalProcessor.exe, M:\Games\Elite Dangerous\EDJP\
+  Run, M:\Games\Elite Dangerous\EDJP\EliteDangerousJournalProcessor.exe, M:\Games\Elite Dangerous\EDJP\
 }
 
 ; EliteG19s
 Process, Exist, EliteG19s.Windows.exe,
 If Not ErrorLevel {
-Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
+  Run, %USERPROFILE%\AppData\Local\Programs\EliteG19s\EliteG19s.Windows.exe, %USERPROFILE%\AppData\Local\Programs\EliteG19s\
 }
 
 ; Discord
 Process, Exist, Discord.exe,
 If Not ErrorLevel {
-Run, C:\Users\Dylan\AppData\Local\Discord\Update.exe --processStart Discord.exe
+  Run, C:\Users\Dylan\AppData\Local\Discord\Update.exe --processStart Discord.exe
 }
 
 ; StatusDisplay
@@ -160,8 +154,13 @@ Run, C:\Users\Dylan\AppData\Local\Discord\Update.exe --processStart Discord.exe
 ; "C:\Program Files (x86)\VoiceAttack\Apps\EDDI\EDDI.exe"
 
 ; ok now open some web apps
-run, C:\Users\Dylan\AppData\Local\BraveSoftware\Brave-Browser\Application\brave.exe https://www.spansh.co.uk/exact-plotter https://eddb.io/trade/loops https://inara.cz/search-nearest/ https://s.orbis.zone/gpj5 https://www.reddit.com/r/EliteDangerous/comments/ggffqq/ https://www.reddit.com/r/EliteDangerous/comments/merpky
-
+run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://www.spansh.co.uk/exact-plotter"
+; run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://eddb.io/trade/loops"
+run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://inara.cz/search-nearest/"
+run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://community.elitedangerous.com/"
+; run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://s.orbis.zone/gpj5"
+; run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://www.reddit.com/r/EliteDangerous/comments/ggffqq/"
+; run, "C:\Program Files\Google\Chrome\Application\chrome.exe" "https://www.reddit.com/r/EliteDangerous/comments/merpky"
 
 ; Minimize Everything ---------------------------------------------------------
 Send {LWinDown}{d}{LWinUp}}
@@ -183,11 +182,7 @@ run, steam://rungameid/359320
 ;; better check the manual
 ; Run, M:\Games\Elite Dangerous\Cougar Display\MFDCougar.exe
 
-
-
-
 ; Cleanup ----------------------------------------------------------------------
-
 
 ; Close launcher after launch
 ; note: min-ed-launcher also checks to close launcher when game exits
@@ -219,47 +214,37 @@ Send {LWinDown}{d}{LWinUp}}
 Tray_Refresh()
 ExitApp
 
-
-
-
-
-
 return
 ; END OF MAIN SCRIPT
 ; ==============================================================================
 
-
-
-
 ; FUNCTIONS
 ; ==============================================================================
 
-
 ; Always on Top
 ; ------------------------------------------------------------------------------
-; stick” any window to  foreground of desktop with a simple keyboard shortcut.
+; stick" any window to  foreground of desktop with a simple keyboard shortcut.
 ; source: https://www.labnol.org/software/tutorials/keep-window-always-on-top/5213/
 ; to use it, while this script is running, click a window, then do control+space
 ; control+space again will un-stick the window.
- ^SPACE::  Winset, Alwaysontop, , A
-
+^SPACE:: Winset, Alwaysontop, , A
 
 ; TRAY REFRESH
 ; ------------------------------------------------------------------------------
 Tray_Refresh() {
-/*    Remove any dead icon from the tray menu
- *    Should work both for W7 & W10
- */
+  /*    Remove any dead icon from the tray menu
+   *    Should work both for W7 & W10
+   */
   WM_MOUSEMOVE := 0x200
   detectHiddenWin := A_DetectHiddenWindows
   DetectHiddenWindows, On
 
   allTitles := ["ahk_class Shell_TrayWnd"
-      , "ahk_class NotifyIconOverflowWindow"]
+    , "ahk_class NotifyIconOverflowWindow"]
   allControls := ["ToolbarWindow321"
-        ,"ToolbarWindow322"
-        ,"ToolbarWindow323"
-        ,"ToolbarWindow324"]
+    ,"ToolbarWindow322"
+    ,"ToolbarWindow323"
+    ,"ToolbarWindow324"]
   allIconSizes := [24,32]
 
   for id, title in allTitles {
@@ -287,38 +272,35 @@ Tray_Refresh() {
   DetectHiddenWindows, %detectHiddenWin%
 }
 
-
 ; Save Reload / Quick Stop
 ; =============================================================================
 
 #IfWinActive, ahk_group saveReload
 
-; Use Control+S to save your script and reload it at the same time.
-~^s::
-  TrayTip, Reloading updated script, %A_ScriptName%
-  SetTimer, RemoveTrayTip, 1500
-  Sleep, 1750
-  Reload
-return
+  ; Use Control+S to save your script and reload it at the same time.
+  ~^s::
+    TrayTip, Reloading updated script, %A_ScriptName%
+    SetTimer, RemoveTrayTip, 1500
+    Sleep, 1750
+    Reload
+  return
 
-; Removes any popped up tray tips.
-RemoveTrayTip:
-  SetTimer, RemoveTrayTip, Off
-  TrayTip
-return
+  ; Removes any popped up tray tips.
+  RemoveTrayTip:
+    SetTimer, RemoveTrayTip, Off
+    TrayTip
+  return
 
-; Hard exit that just closes the script
-^Esc::
-ExitApp
+  ; Hard exit that just closes the script
+  ^Esc::
+  ExitApp
 
-#UseHook
+  #UseHook
 #IfWinActive
-
 
 ; ==============================================================================
 ; =============================== Experimental =================================
 ; ==============================================================================
-
 
 ; Global hotstrings ------------------------------------------------------------
 ; etc...
@@ -327,8 +309,6 @@ ExitApp
 ; Evertything between here and the next #IfWinActive will ONLY work in someProgram.exe
 ; This is called being "context sensitive"
 ; #IfWinActive, ahk_exe someProgram.exe
-
-
 
 ; #IfWinActive
 ;============================== ini Section ==============================

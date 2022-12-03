@@ -1,8 +1,8 @@
 ﻿{
   "standardVoice": "Microsoft Zira",
   "volume": 100,
-  "effectsLevel": 38,
-  "distortOnDamage": false,
+  "effectsLevel": 26,
+  "distortOnDamage": true,
   "rate": 1,
   "disableipa": false,
   "enableicao": false

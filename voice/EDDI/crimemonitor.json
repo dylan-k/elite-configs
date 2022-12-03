@@ -1,39 +1,6 @@
 ﻿{
-  "criminalrecord": [
-    {
-      "faction": "G 139-3 Vision & Co",
-      "allegiance": "Federation",
-      "system": "G 139-3",
-      "station": "HNX-2KQ",
-      "claims": 0,
-      "fines": 400,
-      "bounties": 0,
-      "factionSystems": [
-        "G 139-3",
-        "Wolf 1509"
-      ],
-      "interstellarBountyFactions": [],
-      "factionReports": [
-        {
-          "timestamp": "2021-11-24T08:24:40Z",
-          "bounty": false,
-          "crimeEDName": "dockingMinorTresspass",
-          "system": "G 139-3",
-          "station": "O'Connor Dock",
-          "body": null,
-          "victim": null,
-          "victimAllegiance": null,
-          "amount": 400
-        }
-      ]
-    }
-  ],
+  "criminalrecord": [],
   "homeSystems": {},
-  "claims": 0,
-  "fines": 400,
-  "bounties": 0,
-  "maxStationDistanceFromStarLs": 10000,
-  "prioritizeOrbitalStations": false,
-  "targetSystem": "HIP 43670",
-  "updatedat": "2021-11-24T23:23:00Z"
+  "targetSystem": "HIP 3587",
+  "updatedat": "2022-12-03T17:42:42Z"
 }

@@ -2,7 +2,6 @@
   "homeSystem": "Bactrimpox",
   "homeStation": "Coney Enterprise",
   "destinationSystem": null,
-  "destinationStation": null,
   "squadronName": "Canonn",
   "squadronID": "Cano",
   "squadronRank": "Rookie",
@@ -11,12 +10,22 @@
   "squadronSystem": "Varati",
   "squadronFaction": "Canonn",
   "debug": false,
-  "beta": true,
+  "beta": false,
   "DisableTelemetry": false,
   "plugins": {
     "Galnet monitor": true,
     "Inara Responder": false,
-    "EDDN responder": false
+    "EDDN responder": false,
+    "Cargo monitor": true,
+    "Crime monitor": true,
+    "EDDP monitor": true,
+    "Material monitor": true,
+    "Mission monitor": true,
+    "Navigation monitor": true,
+    "Ship Monitor": true,
+    "EDSM responder": true,
+    "Speech responder": true,
+    "VoiceAttack responder": true
   },
   "Gender": "Male",
   "powerMerits": null,
@@ -26,6 +35,7 @@
   "PhoneticName": null,
   "Maximized": false,
   "Minimized": false,
-  "SelectedTab": 13,
-  "MainWindowPosition": "685,228,928,600"
+  "SelectedTab": 0,
+  "MainWindowPosition": "685,228,928,600",
+  "fleetCarrier": null
 }

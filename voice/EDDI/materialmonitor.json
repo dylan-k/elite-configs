@@ -5,960 +5,1370 @@
       "amount": 8,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "compactemissionsdata",
-      "amount": 9,
+      "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "adaptiveencryptors",
       "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "bulkscandata",
-      "amount": 8,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "fsdtelemetry",
       "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "antimony",
-      "amount": 18,
+      "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "arsenic",
       "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "disruptedwakeechoes",
       "amount": 54,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "encryptionarchives",
-      "amount": 64,
+      "amount": 9,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "basicconductors",
       "amount": 13,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "biotechconductors",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "boron",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "cadmium",
-      "amount": 12,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "carbon",
-      "amount": 37,
+      "amount": 49,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "chemicaldistillery",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "chemicalmanipulators",
-      "amount": 9,
+      "amount": 15,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "chemicalprocessors",
-      "amount": 8,
+      "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "chemicalstorageunits",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "chromium",
-      "amount": 10,
+      "amount": 5,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "scandatabanks",
-      "amount": 2,
+      "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "classifiedscandata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "compactcomposites",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "compoundshielding",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "conductiveceramics",
       "amount": 3,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "conductivecomponents",
-      "amount": 7,
+      "amount": 5,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "conductivepolymers",
-      "amount": 1,
+      "amount": 4,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "configurablecomponents",
       "amount": 4,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "fedcorecomposites",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "industrialfirmware",
-      "amount": 5,
+      "amount": 8,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "crystalshards",
       "amount": 36,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "dataminedwake",
-      "amount": 3,
+      "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "decodedemissiondata",
       "amount": 9,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "shieldcyclerecordings",
-      "amount": 17,
+      "amount": 18,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "encodedscandata",
-      "amount": 3,
+      "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "hyperspacetrajectories",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "electrochemicalarrays",
-      "amount": 3,
+      "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "scrambledemissiondata",
       "amount": 30,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "exquisitefocuscrystals",
-      "amount": 4,
+      "amount": 9,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "filamentcomposites",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "uncutfocuscrystals",
-      "amount": 9,
+      "amount": 12,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "focuscrystals",
       "amount": 7,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "galvanisingalloys",
       "amount": 12,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "germanium",
-      "amount": 36,
+      "amount": 32,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "gridresistors",
-      "amount": 1,
+      "amount": 8,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "guardian_moduleblueprint",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "guardian_powercell",
       "amount": 300,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "guardian_powerconduit",
       "amount": 250,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "guardian_sentinel_weaponparts",
       "amount": 87,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "guardian_sentinel_wreckagecomponents",
       "amount": 96,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "guardian_techcomponent",
       "amount": 78,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "guardian_vesselblueprint",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "guardian_weaponblueprint",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "heatconductionwiring",
-      "amount": 27,
+      "amount": 33,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "heatdispersionplate",
-      "amount": 8,
+      "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "heatexchangers",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "heatresistantceramics",
-      "amount": 21,
-      "minimum": null,
-      "desired": null,
-      "maximum": 250
-    },
-    {
-      "edname": "heatvanes",
-      "amount": 0,
-      "minimum": null,
-      "desired": null,
-      "maximum": 150
-    },
-    {
-      "edname": "highdensitycomposites",
       "amount": 18,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
+    },
+    {
+      "edname": "heatvanes",
+      "amount": 6,
+      "minimum": null,
+      "desired": null,
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
+    },
+    {
+      "edname": "highdensitycomposites",
+      "amount": 21,
+      "minimum": null,
+      "desired": null,
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "hybridcapacitors",
-      "amount": 10,
+      "amount": 13,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "imperialshielding",
-      "amount": 14,
+      "amount": 29,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "improvisedcomponents",
       "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "shieldsoakanalysis",
-      "amount": 27,
+      "amount": 25,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "iron",
-      "amount": 104,
+      "amount": 113,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "archivedemissiondata",
       "amount": 37,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "lead",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "manganese",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "mechanicalcomponents",
       "amount": 9,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "mechanicalequipment",
-      "amount": 18,
+      "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "mechanicalscrap",
-      "amount": 20,
+      "amount": 7,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "mercury",
       "amount": 8,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "militarygradealloys",
-      "amount": 8,
+      "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "militarysupercapacitors",
-      "amount": 4,
+      "amount": 10,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "consumerfirmware",
-      "amount": 3,
+      "amount": 12,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "embeddedfirmware",
-      "amount": 2,
+      "amount": 3,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "molybdenum",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "nickel",
-      "amount": 100,
+      "amount": 98,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "niobium",
-      "amount": 21,
+      "amount": 12,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "symmetrickeys",
-      "amount": 15,
+      "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "ancientbiologicaldata",
       "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "ancientculturaldata",
       "amount": 18,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "ancientlanguagedata",
       "amount": 27,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "ancienttechnologicaldata",
       "amount": 15,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "ancienthistoricaldata",
       "amount": 18,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "shieldfrequencydata",
-      "amount": 0,
+      "amount": 3,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "pharmaceuticalisolators",
       "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "phasealloys",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "phosphorus",
-      "amount": 13,
+      "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "polonium",
-      "amount": 64,
+      "amount": 62,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "polymercapacitors",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "precipitatedalloys",
-      "amount": 0,
+      "amount": 4,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "fedproprietarycomposites",
       "amount": 11,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "protoheatradiators",
       "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "protolightalloys",
-      "amount": 5,
+      "amount": 58,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "protoradiolicalloys",
-      "amount": 5,
+      "amount": 33,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "refinedfocuscrystals",
-      "amount": 9,
+      "amount": 19,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "rhenium",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "ruthenium",
-      "amount": 59,
+      "amount": 57,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "salvagedalloys",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "securityfirmware",
-      "amount": 3,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "selenium",
-      "amount": 7,
+      "amount": 5,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "unknownenergysource",
       "amount": 5,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "shieldemitters",
-      "amount": 51,
+      "amount": 57,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "shieldingsensors",
-      "amount": 18,
+      "amount": 21,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "legacyfirmware",
-      "amount": 20,
+      "amount": 23,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "wakesolutions",
-      "amount": 11,
+      "amount": 15,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "sulphur",
-      "amount": 36,
+      "amount": 57,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "encryptioncodes",
-      "amount": 12,
+      "amount": 15,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "technetium",
       "amount": 60,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tellurium",
-      "amount": 62,
+      "amount": 61,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "temperedalloys",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "tg_biomechanicalconduits",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "unknowncarapace",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "unknownenergycell",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "tg_compositiondata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "unknownorganiccircuitry",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "tg_propulsionelement",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 100
+      "maximum": 100,
+      "Rarity": {
+        "edname": "veryrare"
+      }
     },
     {
       "edname": "tg_residuedata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tg_shipflightdata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "unknownshipsignature",
-      "amount": 0,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "tg_shipsystemsdata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tg_structuraldata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "unknowntechnologycomponents",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "unknownwakedata",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tg_weaponparts",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tg_wreckagecomponents",
       "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "thermicalloys",
-      "amount": 0,
+      "amount": 2,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "tin",
-      "amount": 3,
+      "amount": 1,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "tungsten",
-      "amount": 31,
+      "amount": 40,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "emissiondata",
       "amount": 15,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "scanarchives",
-      "amount": 2,
+      "amount": 4,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "shielddensityreports",
-      "amount": 10,
+      "amount": 2,
       "minimum": null,
       "desired": null,
-      "maximum": 200
+      "maximum": 200,
+      "Rarity": {
+        "edname": "standard"
+      }
     },
     {
       "edname": "encryptedfiles",
       "amount": 33,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "vanadium",
-      "amount": 28,
+      "amount": 6,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "wornshieldemitters",
-      "amount": 29,
+      "amount": 27,
       "minimum": null,
       "desired": null,
-      "maximum": 300
+      "maximum": 300,
+      "Rarity": {
+        "edname": "verycommon"
+      }
     },
     {
       "edname": "yttrium",
       "amount": 27,
       "minimum": null,
       "desired": null,
-      "maximum": 150
+      "maximum": 150,
+      "Rarity": {
+        "edname": "rare"
+      }
     },
     {
       "edname": "zinc",
-      "amount": 13,
+      "amount": 0,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     },
     {
       "edname": "zirconium",
-      "amount": 42,
+      "amount": 40,
       "minimum": null,
       "desired": null,
-      "maximum": 250
+      "maximum": 250,
+      "Rarity": {
+        "edname": "common"
+      }
     }
-  ],
-  "maxStationDistanceFromStarLs": 10000
+  ]
 }
